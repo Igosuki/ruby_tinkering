@@ -2,27 +2,39 @@ require 'rubygems'
 require 'rack'
 
 class HelloServer
+
+	PUBLIC_DIR = File.expand_path("./public")
+
 	def call(env) 
-		req_path = URI.unescape(env["REQUEST_PATH"])
-		puts env["REQUEST_METHOD"] + " request on host for : " + req_path
-		basedir = File.expand_path("./public")
-		if !File.fnmatch(File.expand_path(basedir+"*"), fileName = File.expand_path((basedir + req_path)), File::FNM_CASEFOLD)
+		resolved_path = File.expand_path(PUBLIC_DIR + URI.unescape(env["REQUEST_PATH"]))
+		unless allowed(resolved_path)
 			return [403, {"Content-Type" => "text/plain"}, ["Forbidden Access"]]
-		elsif File.exists?(fileName = Dir.exists?(fileName) ? File.join(fileName, "index.html") : fileName)
-			file = File.open(fileName)
-			extname = File.extname(fileName)
-			contentType = case extname
-				when ".gif", ".png", ".jpeg" then "image/#{extname[1]}"
-				when ".htm", ".html" then "text/html"
-				else "text/plain"
-			end
-			puts contentType
-			[200, {"Content-Type" => contentType, "Content-Length" => file.size.to_s}, [file.read]]
+		end
+		if file = real_file(resolved_path)
+			[200, {"Content-Type" => content_type(file), "Content-Length" => file.size.to_s}, [file.read]]
 		else
 			[404, {"Content-Type" => "text/plain"}, ["Not Found"]]
 		end
 	end
+
+	def real_file(path) 
+		if File.exists?(real_path = File.directory?(path) ? File.join(path, "index.html") : path)
+			File.new(real_path)
+		end
+	end
+
+	def allowed(path)
+		File.fnmatch(PUBLIC_DIR+"*", path, File::FNM_CASEFOLD)
+	end
+
+	def content_type(file) 
+		case File.extname(file)
+			when /\.(gif|png|jpeg|jpg)/ then "image/#{$1}"
+			when /\.(htm|html)/ then "text/html"
+			else "text/plain"
+		end
+	end
 end
 
-Rack::Handler::Mongrel.run HelloServer.new, :Port => 9292
+
 
