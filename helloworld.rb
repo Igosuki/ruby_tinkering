@@ -14,6 +14,7 @@ require './mixins.rb'
 
 puts Point2D.new(5).decrement
 puts Point2D.new(5).increment
+puts Point2D.new(4) - Point2D.new(5)
 
 require './exercise2.rb'
 
