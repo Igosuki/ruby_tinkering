@@ -2,6 +2,8 @@ common: &common
   adapter: postgresql
   username: rails
   password: password
+  port: 5432
+  host: localhost
 
 development:
   <<: *common

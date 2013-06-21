@@ -1,12 +1,14 @@
-desc "Prints the database configuration according to the environment"
-DB_CONFIG_PATH = "../../../config/database"
-task :cf_log do
-	require 'psych'
+ENV["RAILS_ENV"] ||= "development"
+DB_CONFIG_PATH = Rails.root.join("config")
 
-	file_name = File.expand_path(DB_CONFIG_PATH+".yaml", __FILE__)
-	file_name = File.expand_path(DB_CONFIG_PATH+".yml", __FILE__) if !File.exists?(file_name)	
-	raise "Could not find a database.yaml file in path : #{file_name}" unless File.exists?(file_name) 
-	
-	database_conf = Psych.load_file(file_name)
-	puts database_conf[ENV["RAILS_ENV"]]
+desc "Prints the database configuration according to the environment"
+
+namespace :db do
+	task :conf do
+		require 'psych'
+		file = Dir[File.join(DB_CONFIG_PATH, "database.{yaml,yml}")].first
+		raise "Could not find a database.yaml file in path : #{DB_CONFIG_PATH}" unless file
+		database_conf = Psych.load_file(file)
+		puts database_conf[ENV["RAILS_ENV"]]
+	end
 end
