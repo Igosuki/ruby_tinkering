@@ -1,0 +1,8 @@
+first: 
+  id: 1
+  name: Guillaume
+  description: Awesome Full Stack Engineer
+second:
+  id: 2
+  name: Simon
+  description: XP/TDD Pragmatic Profesional 

@@ -1,0 +1,1836 @@
+Connecting to database specified by database.yml
+  [1m[36m (1.0ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "things"[0m
+  [1m[35mFixture Insert (0.5ms)[0m  INSERT INTO "things" ("name", "description", "created_at", "updated_at", "id") VALUES ('Guillaume', 'Awesome Full Stack Engineer', '2013-06-21 21:22:55', '2013-06-21 21:22:55', 64810937)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "things" ("name", "description", "created_at", "updated_at", "id") VALUES ('Simon', 'XP/TDD Pragmatic Profesional', '2013-06-21 21:22:55', '2013-06-21 21:22:55', 450215437)[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "things"[0m
+  [1m[35mFixture Insert (0.5ms)[0m  INSERT INTO "things" ("name", "description", "created_at", "updated_at", "id") VALUES ('Guillaume', 'Awesome Full Stack Engineer', '2013-06-21 21:24:11', '2013-06-21 21:24:11', 64810937)
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO "things" ("name", "description", "created_at", "updated_at", "id") VALUES ('Simon', 'XP/TDD Pragmatic Profesional', '2013-06-21 21:24:11', '2013-06-21 21:24:11', 450215437)[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+WARNING: Can't mass-assign protected attributes: id
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mThing Exists (0.7ms)[0m  SELECT 1 AS one FROM "things" WHERE "things"."name" = 'dat' LIMIT 1
+  [1m[36mSQL (3.0ms)[0m  [1mINSERT INTO "things" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Fri, 21 Jun 2013 21:24:11 UTC +00:00], ["description", nil], ["name", "dat"], ["updated_at", Fri, 21 Jun 2013 21:24:11 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "things"[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "things" ("name", "description", "created_at", "updated_at", "id") VALUES ('Guillaume', 'Awesome Full Stack Engineer', '2013-06-21 21:25:36', '2013-06-21 21:25:36', 64810937)
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO "things" ("name", "description", "created_at", "updated_at", "id") VALUES ('Simon', 'XP/TDD Pragmatic Profesional', '2013-06-21 21:25:36', '2013-06-21 21:25:36', 450215437)[0m
+  [1m[35m (1.0ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+WARNING: Can't mass-assign protected attributes: id
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mThing Exists (0.7ms)[0m  SELECT 1 AS one FROM "things" WHERE "things"."name" = 'dat' LIMIT 1
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO "things" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Fri, 21 Jun 2013 21:25:36 UTC +00:00], ["description", nil], ["name", "dat"], ["updated_at", Fri, 21 Jun 2013 21:25:36 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mThing Load (0.7ms)[0m  [1mSELECT "things".* FROM "things" WHERE "things"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mThing Load (0.2ms)[0m  SELECT "things".* FROM "things" WHERE "things"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+PG::Error: ERROR:  relation "thing" does not exist
+LINE 5:              WHERE a.attrelid = '"thing"'::regclass
+                                        ^
+:             SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+              FROM pg_attribute a LEFT JOIN pg_attrdef d
+                ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+             WHERE a.attrelid = '"thing"'::regclass
+               AND a.attnum > 0 AND NOT a.attisdropped
+             ORDER BY a.attnum
+
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+PG::Error: ERROR:  relation "thing" does not exist
+LINE 5:              WHERE a.attrelid = '"thing"'::regclass
+                                        ^
+:             SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+              FROM pg_attribute a LEFT JOIN pg_attrdef d
+                ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+             WHERE a.attrelid = '"thing"'::regclass
+               AND a.attnum > 0 AND NOT a.attisdropped
+             ORDER BY a.attnum
+
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+PG::Error: ERROR:  relation "thing" does not exist
+LINE 5:              WHERE a.attrelid = '"thing"'::regclass
+                                        ^
+:             SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+              FROM pg_attribute a LEFT JOIN pg_attrdef d
+                ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+             WHERE a.attrelid = '"thing"'::regclass
+               AND a.attnum > 0 AND NOT a.attisdropped
+             ORDER BY a.attnum
+
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+PG::Error: ERROR:  relation "thing" does not exist
+LINE 5:              WHERE a.attrelid = '"thing"'::regclass
+                                        ^
+:             SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+              FROM pg_attribute a LEFT JOIN pg_attrdef d
+                ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+             WHERE a.attrelid = '"thing"'::regclass
+               AND a.attnum > 0 AND NOT a.attisdropped
+             ORDER BY a.attnum
+
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL
+Connecting to database specified by database.yml
+  [1m[36m (0.7ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "things"[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO "things" ("name", "description", "created_at", "updated_at", "id") VALUES ('Guillaume', 'Awesome Full Stack Engineer', '2013-06-21 21:28:44', '2013-06-21 21:28:44', 64810937)
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO "things" ("name", "description", "created_at", "updated_at", "id") VALUES ('Simon', 'XP/TDD Pragmatic Profesional', '2013-06-21 21:28:44', '2013-06-21 21:28:44', 450215437)[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+WARNING: Can't mass-assign protected attributes: id
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mThing Exists (0.8ms)[0m  SELECT 1 AS one FROM "things" WHERE "things"."name" = 'dat' LIMIT 1
+  [1m[36mSQL (1.9ms)[0m  [1mINSERT INTO "things" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Fri, 21 Jun 2013 21:28:44 UTC +00:00], ["description", nil], ["name", "dat"], ["updated_at", Fri, 21 Jun 2013 21:28:44 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mThing Load (0.5ms)[0m  [1mSELECT "things".* FROM "things" WHERE "things"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mThing Load (0.2ms)[0m  SELECT "things".* FROM "things" WHERE "things"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "things"[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "things" ("name", "description", "created_at", "updated_at", "id") VALUES ('Guillaume', 'Awesome Full Stack Engineer', '2013-06-21 21:30:12', '2013-06-21 21:30:12', 309456473)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "things" ("name", "description", "created_at", "updated_at", "id") VALUES ('Simon', 'XP/TDD Pragmatic Profesional', '2013-06-21 21:30:12', '2013-06-21 21:30:12', 908005739)[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+WARNING: Can't mass-assign protected attributes: id
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mThing Exists (0.7ms)[0m  SELECT 1 AS one FROM "things" WHERE "things"."name" = 'dat' LIMIT 1
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "things" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Fri, 21 Jun 2013 21:30:12 UTC +00:00], ["description", nil], ["name", "dat"], ["updated_at", Fri, 21 Jun 2013 21:30:12 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mThing Load (0.5ms)[0m  [1mSELECT "things".* FROM "things" WHERE "things"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mThing Load (0.2ms)[0m  SELECT "things".* FROM "things" WHERE "things"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "things"[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (1, 'Guillaume', 'Awesome Full Stack Engineer', '2013-06-21 21:30:55', '2013-06-21 21:30:55')
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (2, 'Simon', 'XP/TDD Pragmatic Profesional', '2013-06-21 21:30:55', '2013-06-21 21:30:55')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+WARNING: Can't mass-assign protected attributes: id
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mThing Exists (0.8ms)[0m  SELECT 1 AS one FROM "things" WHERE "things"."name" = 'dat' LIMIT 1
+  [1m[36mSQL (1.3ms)[0m  [1mINSERT INTO "things" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Fri, 21 Jun 2013 21:30:55 UTC +00:00], ["description", nil], ["name", "dat"], ["updated_at", Fri, 21 Jun 2013 21:30:55 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mThing Load (0.6ms)[0m  [1mSELECT "things".* FROM "things" WHERE "things"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mThing Load (0.4ms)[0m  SELECT "things".* FROM "things" WHERE "things"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mThing Exists (0.4ms)[0m  SELECT 1 AS one FROM "things" WHERE ("things"."name" = 'a new name' AND "things"."id" != 2) LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mUPDATE "things" SET "description" = 'another description', "name" = 'a new name', "updated_at" = '2013-06-21 21:30:55.621055' WHERE "things"."id" = 2[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.8ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.4ms)[0m  [1mDELETE FROM "things"[0m
+  [1m[35mFixture Insert (0.5ms)[0m  INSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (1, 'Guillaume', 'Awesome Full Stack Engineer', '2013-06-21 21:32:54', '2013-06-21 21:32:54')
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (2, 'Simon', 'XP/TDD Pragmatic Profesional', '2013-06-21 21:32:54', '2013-06-21 21:32:54')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+WARNING: Can't mass-assign protected attributes: id
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mThing Exists (0.7ms)[0m  SELECT 1 AS one FROM "things" WHERE "things"."name" = 'dat' LIMIT 1
+  [1m[36mSQL (1.6ms)[0m  [1mINSERT INTO "things" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Fri, 21 Jun 2013 21:32:54 UTC +00:00], ["description", nil], ["name", "dat"], ["updated_at", Fri, 21 Jun 2013 21:32:54 UTC +00:00]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+WARNING: Can't mass-assign protected attributes: id
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mThing Exists (0.3ms)[0m  SELECT 1 AS one FROM "things" WHERE "things"."name" = 'dat' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "things" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Fri, 21 Jun 2013 21:32:54 UTC +00:00], ["description", nil], ["name", "dat"], ["updated_at", Fri, 21 Jun 2013 21:32:54 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mThing Load (0.4ms)[0m  [1mSELECT "things".* FROM "things" WHERE "things"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mThing Load (0.2ms)[0m  SELECT "things".* FROM "things" WHERE "things"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mThing Exists (0.5ms)[0m  SELECT 1 AS one FROM "things" WHERE ("things"."name" = 'a new name' AND "things"."id" != 2) LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mUPDATE "things" SET "description" = 'another description', "name" = 'a new name', "updated_at" = '2013-06-21 21:32:54.758549' WHERE "things"."id" = 2[0m
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "things"[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (1, 'Guillaume', 'Awesome Full Stack Engineer', '2013-06-21 21:33:16', '2013-06-21 21:33:16')
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (2, 'Simon', 'XP/TDD Pragmatic Profesional', '2013-06-21 21:33:16', '2013-06-21 21:33:16')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+WARNING: Can't mass-assign protected attributes: id
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mThing Exists (0.7ms)[0m  SELECT 1 AS one FROM "things" WHERE "things"."name" = 'dat' LIMIT 1
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO "things" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Fri, 21 Jun 2013 21:33:16 UTC +00:00], ["description", nil], ["name", "dat"], ["updated_at", Fri, 21 Jun 2013 21:33:16 UTC +00:00]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mThing Load (0.6ms)[0m  [1mSELECT "things".* FROM "things" WHERE "things"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "things" WHERE "things"."id" = $1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mThing Load (0.3ms)[0m  [1mSELECT "things".* FROM "things" WHERE "things"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mThing Load (0.3ms)[0m  SELECT "things".* FROM "things" WHERE "things"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mThing Exists (0.3ms)[0m  SELECT 1 AS one FROM "things" WHERE ("things"."name" = 'a new name' AND "things"."id" != 2) LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mUPDATE "things" SET "description" = 'another description', "name" = 'a new name', "updated_at" = '2013-06-21 21:33:16.719281' WHERE "things"."id" = 2[0m
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.4ms)[0m  [1mDELETE FROM "things"[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (1, 'Guillaume', 'Awesome Full Stack Engineer', '2013-06-21 21:42:15', '2013-06-21 21:42:15')
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (2, 'Simon', 'XP/TDD Pragmatic Profesional', '2013-06-21 21:42:15', '2013-06-21 21:42:15')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+WARNING: Can't mass-assign protected attributes: id
+  [1m[36m (0.4ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mThing Exists (0.7ms)[0m  SELECT 1 AS one FROM "things" WHERE "things"."name" = 'dat' LIMIT 1
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "things" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Fri, 21 Jun 2013 21:42:15 UTC +00:00], ["description", nil], ["name", "dat"], ["updated_at", Fri, 21 Jun 2013 21:42:15 UTC +00:00]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mThing Load (0.6ms)[0m  [1mSELECT "things".* FROM "things" WHERE "things"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "things" WHERE "things"."id" = $1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mThing Load (0.3ms)[0m  [1mSELECT "things".* FROM "things" WHERE "things"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mThing Load (0.2ms)[0m  SELECT "things".* FROM "things" WHERE "things"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mThing Exists (0.5ms)[0m  SELECT 1 AS one FROM "things" WHERE ("things"."name" = 'a new name' AND "things"."id" != 2) LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mUPDATE "things" SET "description" = 'another description', "name" = 'a new name', "updated_at" = '2013-06-21 21:42:15.542859' WHERE "things"."id" = 2[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.4ms)[0m  [1mDELETE FROM "things"[0m
+  [1m[35mFixture Insert (0.5ms)[0m  INSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (1, 'Guillaume', 'Awesome Full Stack Engineer', '2013-06-21 21:42:35', '2013-06-21 21:42:35')
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (2, 'Simon', 'XP/TDD Pragmatic Profesional', '2013-06-21 21:42:35', '2013-06-21 21:42:35')[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+WARNING: Can't mass-assign protected attributes: id
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mThing Exists (0.7ms)[0m  SELECT 1 AS one FROM "things" WHERE "things"."name" = 'dat' LIMIT 1
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO "things" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Fri, 21 Jun 2013 21:42:35 UTC +00:00], ["description", nil], ["name", "dat"], ["updated_at", Fri, 21 Jun 2013 21:42:35 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mThing Load (0.5ms)[0m  [1mSELECT "things".* FROM "things" WHERE "things"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "things" WHERE "things"."id" = $1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mThing Load (0.4ms)[0m  [1mSELECT "things".* FROM "things" WHERE "things"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mThing Load (0.2ms)[0m  SELECT "things".* FROM "things" WHERE "things"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mThing Exists (0.3ms)[0m  SELECT 1 AS one FROM "things" WHERE ("things"."name" = 'a new name' AND "things"."id" != 2) LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mUPDATE "things" SET "description" = 'another description', "name" = 'a new name', "updated_at" = '2013-06-21 21:42:35.123302' WHERE "things"."id" = 2[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.4ms)[0m  [1mDELETE FROM "things"[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (1, 'Guillaume', 'Awesome Full Stack Engineer', '2013-06-21 21:43:44', '2013-06-21 21:43:44')
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (2, 'Simon', 'XP/TDD Pragmatic Profesional', '2013-06-21 21:43:44', '2013-06-21 21:43:44')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mThing Load (0.8ms)[0m  [1mSELECT "things".* FROM "things" WHERE "things"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  ROLLBACK
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.5ms)[0m  [1mDELETE FROM "things"[0m
+  [1m[35mFixture Insert (0.5ms)[0m  INSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (1, 'Guillaume', 'Awesome Full Stack Engineer', '2013-06-21 21:44:18', '2013-06-21 21:44:18')
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (2, 'Simon', 'XP/TDD Pragmatic Profesional', '2013-06-21 21:44:18', '2013-06-21 21:44:18')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mThing Load (1.0ms)[0m  [1mSELECT "things".* FROM "things" WHERE "things"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mThing Load (0.4ms)[0m  SELECT "things".* FROM "things" WHERE "things"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "things"[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (1, 'Guillaume', 'Awesome Full Stack Engineer', '2013-06-21 21:47:25', '2013-06-21 21:47:25')
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (2, 'Simon', 'XP/TDD Pragmatic Profesional', '2013-06-21 21:47:25', '2013-06-21 21:47:25')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mThing Load (1.1ms)[0m  [1mSELECT "things".* FROM "things" WHERE "things"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Processing by ThingsController#create as HTML
+  Parameters: {"thing"=>{"name"=>"lal"}}
+  [1m[35m (0.3ms)[0m  SAVEPOINT active_record_1
+  [1m[36mThing Exists (0.7ms)[0m  [1mSELECT 1 AS one FROM "things" WHERE "things"."name" = 'lal' LIMIT 1[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "things" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Fri, 21 Jun 2013 21:47:25 UTC +00:00], ["description", nil], ["name", "lal"], ["updated_at", Fri, 21 Jun 2013 21:47:25 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/things/3
+Completed 302 Found in 34ms (ActiveRecord: 2.2ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mThing Load (0.4ms)[0m  SELECT "things".* FROM "things" WHERE "things"."id" = $1 LIMIT 1  [["id", 1]]
+Processing by ThingsController#index as HTML
+  [1m[36mThing Load (0.4ms)[0m  [1mSELECT "things".* FROM "things" [0m
+Completed 500 Internal Server Error in 7ms
+  [1m[35m (0.3ms)[0m  ROLLBACK
+Connecting to database specified by database.yml
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.5ms)[0m  [1mDELETE FROM "things"[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (1, 'Guillaume', 'Awesome Full Stack Engineer', '2013-06-21 21:50:01', '2013-06-21 21:50:01')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (2, 'Simon', 'XP/TDD Pragmatic Profesional', '2013-06-21 21:50:01', '2013-06-21 21:50:01')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mThing Load (0.7ms)[0m  [1mSELECT "things".* FROM "things" WHERE "things"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Processing by ThingsController#create as HTML
+  Parameters: {"thing"=>{"name"=>"lal"}}
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mThing Exists (0.9ms)[0m  [1mSELECT 1 AS one FROM "things" WHERE "things"."name" = 'lal' LIMIT 1[0m
+  [1m[35mSQL (1.7ms)[0m  INSERT INTO "things" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Fri, 21 Jun 2013 21:50:01 UTC +00:00], ["description", nil], ["name", "lal"], ["updated_at", Fri, 21 Jun 2013 21:50:01 UTC +00:00]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/things/3
+Completed 302 Found in 39ms (ActiveRecord: 3.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mThing Load (0.4ms)[0m  SELECT "things".* FROM "things" WHERE "things"."id" = $1 LIMIT 1  [["id", 1]]
+Processing by ThingsController#index as HTML
+  [1m[36mThing Load (0.3ms)[0m  [1mSELECT "things".* FROM "things" [0m
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.5ms)[0m  [1mDELETE FROM "things"[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (1, 'Guillaume', 'Awesome Full Stack Engineer', '2013-06-21 21:50:40', '2013-06-21 21:50:40')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (2, 'Simon', 'XP/TDD Pragmatic Profesional', '2013-06-21 21:50:40', '2013-06-21 21:50:40')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mThing Load (1.0ms)[0m  [1mSELECT "things".* FROM "things" WHERE "things"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Processing by ThingsController#create as HTML
+  Parameters: {"thing"=>{"name"=>"lal"}}
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mThing Exists (0.7ms)[0m  [1mSELECT 1 AS one FROM "things" WHERE "things"."name" = 'lal' LIMIT 1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "things" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Fri, 21 Jun 2013 21:50:40 UTC +00:00], ["description", nil], ["name", "lal"], ["updated_at", Fri, 21 Jun 2013 21:50:40 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/things/3
+Completed 302 Found in 36ms (ActiveRecord: 2.1ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mThing Load (0.2ms)[0m  SELECT "things".* FROM "things" WHERE "things"."id" = $1 LIMIT 1  [["id", 1]]
+Processing by ThingsController#index as HTML
+  [1m[36mThing Load (0.4ms)[0m  [1mSELECT "things".* FROM "things" [0m
+Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.4ms)[0m  [1mDELETE FROM "things"[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (1, 'Guillaume', 'Awesome Full Stack Engineer', '2013-06-21 21:55:21', '2013-06-21 21:55:21')
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (2, 'Simon', 'XP/TDD Pragmatic Profesional', '2013-06-21 21:55:21', '2013-06-21 21:55:21')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mThing Load (1.0ms)[0m  [1mSELECT "things".* FROM "things" WHERE "things"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Started POST "/things/1" for 127.0.0.1 at 2013-06-21 23:55:21 +0200
+
+ActionController::RoutingError (No route matches [POST] "/things/1"):
+  test/integration/things_integration.rb:8:in `block in <class:ThingFlowsTest>'
+
+
+  [1m[35m (0.3ms)[0m  ROLLBACK
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.4ms)[0m  [1mDELETE FROM "things"[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (1, 'Guillaume', 'Awesome Full Stack Engineer', '2013-06-21 21:55:37', '2013-06-21 21:55:37')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (2, 'Simon', 'XP/TDD Pragmatic Profesional', '2013-06-21 21:55:37', '2013-06-21 21:55:37')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mThing Load (0.9ms)[0m  [1mSELECT "things".* FROM "things" WHERE "things"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Started POST "/things/1" for 127.0.0.1 at 2013-06-21 23:55:37 +0200
+
+ActionController::RoutingError (No route matches [POST] "/things/1"):
+  test/integration/things_integration.rb:8:in `block in <class:ThingFlowsTest>'
+
+
+  [1m[35m (0.3ms)[0m  ROLLBACK
+Connecting to database specified by database.yml
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.5ms)[0m  [1mDELETE FROM "things"[0m
+  [1m[35mFixture Insert (0.5ms)[0m  INSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (1, 'Guillaume', 'Awesome Full Stack Engineer', '2013-06-21 21:58:01', '2013-06-21 21:58:01')
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (2, 'Simon', 'XP/TDD Pragmatic Profesional', '2013-06-21 21:58:01', '2013-06-21 21:58:01')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+WARNING: Can't mass-assign protected attributes: id
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.4ms)[0m  [1mDELETE FROM "things"[0m
+  [1m[35mFixture Insert (0.5ms)[0m  INSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (1, 'Guillaume', 'Awesome Full Stack Engineer', '2013-06-21 21:58:54', '2013-06-21 21:58:54')
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (2, 'Simon', 'XP/TDD Pragmatic Profesional', '2013-06-21 21:58:54', '2013-06-21 21:58:54')[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+WARNING: Can't mass-assign protected attributes: id
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "things"[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (1, 'Guillaume', 'Awesome Full Stack Engineer', '2013-06-21 21:59:05', '2013-06-21 21:59:05')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (2, 'Simon', 'XP/TDD Pragmatic Profesional', '2013-06-21 21:59:05', '2013-06-21 21:59:05')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+WARNING: Can't mass-assign protected attributes: id
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "things"[0m
+  [1m[35mFixture Insert (0.5ms)[0m  INSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (1, 'Guillaume', 'Awesome Full Stack Engineer', '2013-06-21 22:00:42', '2013-06-21 22:00:42')
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (2, 'Simon', 'XP/TDD Pragmatic Profesional', '2013-06-21 22:00:42', '2013-06-21 22:00:42')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+WARNING: Can't mass-assign protected attributes: id
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "things"[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (1, 'Guillaume', 'Awesome Full Stack Engineer', '2013-06-21 22:01:54', '2013-06-21 22:01:54')
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (2, 'Simon', 'XP/TDD Pragmatic Profesional', '2013-06-21 22:01:54', '2013-06-21 22:01:54')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+WARNING: Can't mass-assign protected attributes: id
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "things"[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (1, 'Guillaume', 'Awesome Full Stack Engineer', '2013-06-21 22:02:32', '2013-06-21 22:02:32')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (2, 'Simon', 'XP/TDD Pragmatic Profesional', '2013-06-21 22:02:32', '2013-06-21 22:02:32')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+WARNING: Can't mass-assign protected attributes: id
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.4ms)[0m  [1mDELETE FROM "things"[0m
+  [1m[35mFixture Insert (0.5ms)[0m  INSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (1, 'Guillaume', 'Awesome Full Stack Engineer', '2013-06-21 22:03:05', '2013-06-21 22:03:05')
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (2, 'Simon', 'XP/TDD Pragmatic Profesional', '2013-06-21 22:03:05', '2013-06-21 22:03:05')[0m
+  [1m[35m (1.2ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+WARNING: Can't mass-assign protected attributes: id
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "things"[0m
+  [1m[35mFixture Insert (0.5ms)[0m  INSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (1, 'Guillaume', 'Awesome Full Stack Engineer', '2013-06-21 22:03:37', '2013-06-21 22:03:37')
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (2, 'Simon', 'XP/TDD Pragmatic Profesional', '2013-06-21 22:03:37', '2013-06-21 22:03:37')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+WARNING: Can't mass-assign protected attributes: id
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "things"[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (1, 'Guillaume', 'Awesome Full Stack Engineer', '2013-06-21 22:05:08', '2013-06-21 22:05:08')
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (2, 'Simon', 'XP/TDD Pragmatic Profesional', '2013-06-21 22:05:08', '2013-06-21 22:05:08')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mThing Load (1.1ms)[0m  [1mSELECT "things".* FROM "things" WHERE "things"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Started POST "/things/1" for 127.0.0.1 at 2013-06-22 00:05:08 +0200
+
+ActionController::RoutingError (No route matches [POST] "/things/1"):
+  test/integration/things_integration.rb:10:in `block in <class:ThingFlowsTest>'
+
+
+Started GET "/things/1" for 127.0.0.1 at 2013-06-22 00:05:08 +0200
+Processing by ThingsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mThing Load (0.5ms)[0m  SELECT "things".* FROM "things" WHERE "things"."id" = $1 LIMIT 1  [["id", "1"]]
+  Rendered things/show.html.haml (2.3ms)
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.5ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "things"[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (1, 'Guillaume', 'Awesome Full Stack Engineer', '2013-06-21 22:05:28', '2013-06-21 22:05:28')
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (2, 'Simon', 'XP/TDD Pragmatic Profesional', '2013-06-21 22:05:28', '2013-06-21 22:05:28')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mThing Load (1.0ms)[0m  [1mSELECT "things".* FROM "things" WHERE "things"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Started POST "/things/1" for 127.0.0.1 at 2013-06-22 00:05:28 +0200
+
+ActionController::RoutingError (No route matches [POST] "/things/1"):
+  test/integration/things_integration.rb:10:in `block in <class:ThingFlowsTest>'
+
+
+Started GET "/things/1" for 127.0.0.1 at 2013-06-22 00:05:28 +0200
+Processing by ThingsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mThing Load (0.5ms)[0m  SELECT "things".* FROM "things" WHERE "things"."id" = $1 LIMIT 1  [["id", "1"]]
+  Rendered things/show.html.haml (2.5ms)
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.5ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "things"[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (1, 'Guillaume', 'Awesome Full Stack Engineer', '2013-06-21 22:06:22', '2013-06-21 22:06:22')
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (2, 'Simon', 'XP/TDD Pragmatic Profesional', '2013-06-21 22:06:22', '2013-06-21 22:06:22')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mThing Load (1.0ms)[0m  [1mSELECT "things".* FROM "things" WHERE "things"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Started POST "/things/1" for 127.0.0.1 at 2013-06-22 00:06:23 +0200
+
+ActionController::RoutingError (No route matches [POST] "/things/1"):
+  test/integration/things_integration.rb:10:in `block in <class:ThingFlowsTest>'
+
+
+Started GET "/things/1" for 127.0.0.1 at 2013-06-22 00:06:23 +0200
+Processing by ThingsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mThing Load (0.5ms)[0m  SELECT "things".* FROM "things" WHERE "things"."id" = $1 LIMIT 1  [["id", "1"]]
+  Rendered things/show.html.haml (2.3ms)
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.5ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.4ms)[0m  [1mDELETE FROM "things"[0m
+  [1m[35mFixture Insert (0.5ms)[0m  INSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (1, 'Guillaume', 'Awesome Full Stack Engineer', '2013-06-21 22:09:34', '2013-06-21 22:09:34')
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (2, 'Simon', 'XP/TDD Pragmatic Profesional', '2013-06-21 22:09:34', '2013-06-21 22:09:34')[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mThing Load (1.1ms)[0m  [1mSELECT "things".* FROM "things" WHERE "things"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Started POST "/things/1" for 127.0.0.1 at 2013-06-22 00:09:34 +0200
+
+ActionController::RoutingError (No route matches [POST] "/things/1"):
+  test/integration/things_integration_test.rb:10:in `block in <class:ThingFlowsTest>'
+
+
+  [1m[35m (0.3ms)[0m  ROLLBACK
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "things"[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (1, 'Guillaume', 'Awesome Full Stack Engineer', '2013-06-21 22:10:04', '2013-06-21 22:10:04')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (2, 'Simon', 'XP/TDD Pragmatic Profesional', '2013-06-21 22:10:04', '2013-06-21 22:10:04')[0m
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mThing Load (1.0ms)[0m  [1mSELECT "things".* FROM "things" WHERE "things"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  ROLLBACK
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "things"[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (1, 'Guillaume', 'Awesome Full Stack Engineer', '2013-06-21 22:10:57', '2013-06-21 22:10:57')
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (2, 'Simon', 'XP/TDD Pragmatic Profesional', '2013-06-21 22:10:57', '2013-06-21 22:10:57')[0m
+  [1m[35m (0.7ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mThing Load (1.1ms)[0m  [1mSELECT "things".* FROM "things" WHERE "things"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.4ms)[0m  ROLLBACK
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "things"[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (1, 'Guillaume', 'Awesome Full Stack Engineer', '2013-06-21 22:11:56', '2013-06-21 22:11:56')
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (2, 'Simon', 'XP/TDD Pragmatic Profesional', '2013-06-21 22:11:56', '2013-06-21 22:11:56')[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mThing Load (0.8ms)[0m  [1mSELECT "things".* FROM "things" WHERE "things"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  ROLLBACK
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "things"[0m
+  [1m[35mFixture Insert (0.5ms)[0m  INSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (1, 'Guillaume', 'Awesome Full Stack Engineer', '2013-06-21 22:12:18', '2013-06-21 22:12:18')
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (2, 'Simon', 'XP/TDD Pragmatic Profesional', '2013-06-21 22:12:18', '2013-06-21 22:12:18')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mThing Load (0.8ms)[0m  [1mSELECT "things".* FROM "things" WHERE "things"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  ROLLBACK
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "things"[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (1, 'Guillaume', 'Awesome Full Stack Engineer', '2013-06-21 22:12:31', '2013-06-21 22:12:31')
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (2, 'Simon', 'XP/TDD Pragmatic Profesional', '2013-06-21 22:12:31', '2013-06-21 22:12:31')[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mThing Load (0.7ms)[0m  [1mSELECT "things".* FROM "things" WHERE "things"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Started GET "/things/1" for 127.0.0.1 at 2013-06-22 00:12:31 +0200
+Processing by ThingsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mThing Load (0.4ms)[0m  SELECT "things".* FROM "things" WHERE "things"."id" = $1 LIMIT 1  [["id", "1"]]
+  Rendered things/show.html.haml (3.4ms)
+Completed 200 OK in 11ms (Views: 9.4ms | ActiveRecord: 0.4ms)
+Started PUT "/things/1?name=A+new+name" for 127.0.0.1 at 2013-06-22 00:12:31 +0200
+Processing by ThingsController#update as HTML
+  Parameters: {"name"=>"A new name", "id"=>"1"}
+  [1m[36mThing Load (0.5ms)[0m  [1mSELECT "things".* FROM "things" WHERE "things"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mThing Exists (0.8ms)[0m  [1mSELECT 1 AS one FROM "things" WHERE ("things"."name" = 'Guillaume' AND "things"."id" != 1) LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/things/1
+Completed 302 Found in 13ms (ActiveRecord: 1.6ms)
+Started GET "/things/1" for 127.0.0.1 at 2013-06-22 00:12:31 +0200
+Processing by ThingsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mThing Load (0.4ms)[0m  [1mSELECT "things".* FROM "things" WHERE "things"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  Rendered things/show.html.haml (0.6ms)
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "things"[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (1, 'Guillaume', 'Awesome Full Stack Engineer', '2013-06-21 22:12:46', '2013-06-21 22:12:46')
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (2, 'Simon', 'XP/TDD Pragmatic Profesional', '2013-06-21 22:12:46', '2013-06-21 22:12:46')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mThing Load (0.8ms)[0m  [1mSELECT "things".* FROM "things" WHERE "things"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Started GET "/things/1" for 127.0.0.1 at 2013-06-22 00:12:46 +0200
+Processing by ThingsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mThing Load (0.5ms)[0m  SELECT "things".* FROM "things" WHERE "things"."id" = $1 LIMIT 1  [["id", "1"]]
+  Rendered things/show.html.haml (2.3ms)
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.5ms)
+Started PUT "/things/1?name=A+new+name" for 127.0.0.1 at 2013-06-22 00:12:46 +0200
+Processing by ThingsController#update as HTML
+  Parameters: {"name"=>"A new name", "id"=>"1"}
+  [1m[36mThing Load (0.3ms)[0m  [1mSELECT "things".* FROM "things" WHERE "things"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mThing Exists (0.8ms)[0m  [1mSELECT 1 AS one FROM "things" WHERE ("things"."name" = 'Guillaume' AND "things"."id" != 1) LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/things/1
+Completed 302 Found in 13ms (ActiveRecord: 1.5ms)
+Started GET "/things/1" for 127.0.0.1 at 2013-06-22 00:12:46 +0200
+Processing by ThingsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mThing Load (0.5ms)[0m  [1mSELECT "things".* FROM "things" WHERE "things"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  Rendered things/show.html.haml (0.9ms)
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.5ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "things"[0m
+  [1m[35mFixture Insert (0.5ms)[0m  INSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (1, 'Guillaume', 'Awesome Full Stack Engineer', '2013-06-21 22:13:33', '2013-06-21 22:13:33')
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (2, 'Simon', 'XP/TDD Pragmatic Profesional', '2013-06-21 22:13:33', '2013-06-21 22:13:33')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mThing Load (1.1ms)[0m  [1mSELECT "things".* FROM "things" WHERE "things"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Started POST "/things" for 127.0.0.1 at 2013-06-22 00:13:33 +0200
+Processing by ThingsController#create as HTML
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mThing Exists (0.5ms)[0m  [1mSELECT 1 AS one FROM "things" WHERE "things"."name" IS NULL LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 500 Internal Server Error in 15ms
+
+NameError (undefined local variable or method `action' for #<ThingsController:0x007f93acac0e58>):
+  app/controllers/things_controller.rb:19:in `create'
+  test/integration/things_integration_test.rb:10:in `block in <class:ThingFlowsTest>'
+
+
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "things"[0m
+  [1m[35mFixture Insert (0.5ms)[0m  INSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (1, 'Guillaume', 'Awesome Full Stack Engineer', '2013-06-21 22:14:11', '2013-06-21 22:14:11')
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (2, 'Simon', 'XP/TDD Pragmatic Profesional', '2013-06-21 22:14:11', '2013-06-21 22:14:11')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started POST "/things" for 127.0.0.1 at 2013-06-22 00:14:11 +0200
+Processing by ThingsController#create as HTML
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mThing Exists (0.5ms)[0m  SELECT 1 AS one FROM "things" WHERE "things"."name" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 17ms
+
+NameError (undefined local variable or method `action' for #<ThingsController:0x007f8d25c2d800>):
+  app/controllers/things_controller.rb:19:in `create'
+  test/integration/things_integration_test.rb:10:in `block in <class:ThingFlowsTest>'
+
+
+  [1m[35m (0.3ms)[0m  ROLLBACK
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "things"[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (1, 'Guillaume', 'Awesome Full Stack Engineer', '2013-06-21 22:14:34', '2013-06-21 22:14:34')
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (2, 'Simon', 'XP/TDD Pragmatic Profesional', '2013-06-21 22:14:34', '2013-06-21 22:14:34')[0m
+  [1m[35m (0.7ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "things"[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (1, 'Guillaume', 'Awesome Full Stack Engineer', '2013-06-21 22:15:02', '2013-06-21 22:15:02')
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (2, 'Simon', 'XP/TDD Pragmatic Profesional', '2013-06-21 22:15:02', '2013-06-21 22:15:02')[0m
+  [1m[35m (0.7ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started POST "/things" for 127.0.0.1 at 2013-06-22 00:15:02 +0200
+Processing by ThingsController#create as HTML
+  Parameters: {"name"=>"Alex", "description"=>"Intg test"}
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mThing Exists (0.5ms)[0m  SELECT 1 AS one FROM "things" WHERE "things"."name" IS NULL LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 19ms
+
+NameError (undefined local variable or method `action' for #<ThingsController:0x007ff7445f2fb0>):
+  app/controllers/things_controller.rb:19:in `create'
+  test/integration/things_integration_test.rb:9:in `block in <class:ThingFlowsTest>'
+
+
+  [1m[35m (0.3ms)[0m  ROLLBACK
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "things"[0m
+  [1m[35mFixture Insert (0.5ms)[0m  INSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (1, 'Guillaume', 'Awesome Full Stack Engineer', '2013-06-21 22:15:21', '2013-06-21 22:15:21')
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (2, 'Simon', 'XP/TDD Pragmatic Profesional', '2013-06-21 22:15:21', '2013-06-21 22:15:21')[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started POST "/things" for 127.0.0.1 at 2013-06-22 00:15:21 +0200
+Processing by ThingsController#create as HTML
+  Parameters: {"name"=>"Alex", "description"=>"Intg test"}
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mThing Exists (0.4ms)[0m  SELECT 1 AS one FROM "things" WHERE "things"."name" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 18ms
+
+NameError (undefined local variable or method `action' for #<ThingsController:0x007fbac4bc19a8>):
+  app/controllers/things_controller.rb:19:in `create'
+  test/integration/things_integration_test.rb:9:in `block in <class:ThingFlowsTest>'
+
+
+  [1m[35m (0.3ms)[0m  ROLLBACK
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.4ms)[0m  [1mDELETE FROM "things"[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (1, 'Guillaume', 'Awesome Full Stack Engineer', '2013-06-21 22:15:36', '2013-06-21 22:15:36')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (2, 'Simon', 'XP/TDD Pragmatic Profesional', '2013-06-21 22:15:36', '2013-06-21 22:15:36')[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started POST "/things" for 127.0.0.1 at 2013-06-22 00:15:36 +0200
+Processing by ThingsController#create as HTML
+  Parameters: {"id"=>"4", "name"=>"Alex", "description"=>"Intg test"}
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mThing Exists (0.5ms)[0m  SELECT 1 AS one FROM "things" WHERE "things"."name" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 19ms
+
+NameError (undefined local variable or method `action' for #<ThingsController:0x007fce5736a5b0>):
+  app/controllers/things_controller.rb:19:in `create'
+  test/integration/things_integration_test.rb:9:in `block in <class:ThingFlowsTest>'
+
+
+  [1m[35m (0.2ms)[0m  ROLLBACK
+Connecting to database specified by database.yml
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "things"[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (1, 'Guillaume', 'Awesome Full Stack Engineer', '2013-06-21 22:17:25', '2013-06-21 22:17:25')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (2, 'Simon', 'XP/TDD Pragmatic Profesional', '2013-06-21 22:17:25', '2013-06-21 22:17:25')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "things"[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (1, 'Guillaume', 'Awesome Full Stack Engineer', '2013-06-21 22:17:38', '2013-06-21 22:17:38')
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (2, 'Simon', 'XP/TDD Pragmatic Profesional', '2013-06-21 22:17:38', '2013-06-21 22:17:38')[0m
+  [1m[35m (1.1ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Started POST "/things" for 127.0.0.1 at 2013-06-22 00:17:38 +0200
+Processing by ThingsController#create as HTML
+  Parameters: {"id"=>"4", "name"=>"Alex", "description"=>"Intg test"}
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mThing Exists (0.5ms)[0m  SELECT 1 AS one FROM "things" WHERE "things"."name" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 33ms
+
+NameError (undefined local variable or method `action' for #<ThingsController:0x007ff02ca96568>):
+  app/controllers/things_controller.rb:19:in `create'
+  test/integration/things_integration_test.rb:9:in `block in <class:ThingFlowsTest>'
+
+
+  [1m[35m (0.4ms)[0m  ROLLBACK
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.4ms)[0m  [1mDELETE FROM "things"[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (1, 'Guillaume', 'Awesome Full Stack Engineer', '2013-06-21 22:18:13', '2013-06-21 22:18:13')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (2, 'Simon', 'XP/TDD Pragmatic Profesional', '2013-06-21 22:18:13', '2013-06-21 22:18:13')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started POST "/things" for 127.0.0.1 at 2013-06-22 00:18:13 +0200
+Processing by ThingsController#create as HTML
+  Parameters: {"id"=>"4", "name"=>"Alex", "description"=>"Intg test"}
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mThing Exists (0.5ms)[0m  SELECT 1 AS one FROM "things" WHERE "things"."name" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 18ms
+
+NameError (undefined local variable or method `action' for #<ThingsController:0x007fc64bfa2b48>):
+  app/controllers/things_controller.rb:19:in `create'
+  test/integration/things_integration_test.rb:9:in `block in <class:ThingFlowsTest>'
+
+
+  [1m[35m (0.2ms)[0m  ROLLBACK
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "things"[0m
+  [1m[35mFixture Insert (0.5ms)[0m  INSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (1, 'Guillaume', 'Awesome Full Stack Engineer', '2013-06-21 22:19:02', '2013-06-21 22:19:02')
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (2, 'Simon', 'XP/TDD Pragmatic Profesional', '2013-06-21 22:19:02', '2013-06-21 22:19:02')[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.4ms)[0m  [1mDELETE FROM "things"[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (1, 'Guillaume', 'Awesome Full Stack Engineer', '2013-06-21 22:19:14', '2013-06-21 22:19:14')
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (2, 'Simon', 'XP/TDD Pragmatic Profesional', '2013-06-21 22:19:14', '2013-06-21 22:19:14')[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.8ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "things"[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (1, 'Guillaume', 'Awesome Full Stack Engineer', '2013-06-21 22:19:24', '2013-06-21 22:19:24')
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (2, 'Simon', 'XP/TDD Pragmatic Profesional', '2013-06-21 22:19:24', '2013-06-21 22:19:24')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started POST "/thing" for 127.0.0.1 at 2013-06-22 00:19:25 +0200
+
+ActionController::RoutingError (No route matches [POST] "/thing"):
+  test/integration/things_integration_test.rb:10:in `block in <class:ThingFlowsTest>'
+
+
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "things"[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (1, 'Guillaume', 'Awesome Full Stack Engineer', '2013-06-21 22:19:34', '2013-06-21 22:19:34')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (2, 'Simon', 'XP/TDD Pragmatic Profesional', '2013-06-21 22:19:34', '2013-06-21 22:19:34')[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started POST "/things" for 127.0.0.1 at 2013-06-22 00:19:34 +0200
+Processing by ThingsController#create as HTML
+  Parameters: {"id"=>"4", "name"=>"Alex", "description"=>"Intg test"}
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mThing Exists (0.5ms)[0m  SELECT 1 AS one FROM "things" WHERE "things"."name" IS NULL LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 18ms
+
+NameError (undefined local variable or method `action' for #<ThingsController:0x007f9d74be9c90>):
+  app/controllers/things_controller.rb:19:in `create'
+  test/integration/things_integration_test.rb:10:in `block in <class:ThingFlowsTest>'
+
+
+  [1m[35m (0.2ms)[0m  ROLLBACK
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "things"[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (1, 'Guillaume', 'Awesome Full Stack Engineer', '2013-06-21 22:20:57', '2013-06-21 22:20:57')
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (2, 'Simon', 'XP/TDD Pragmatic Profesional', '2013-06-21 22:20:57', '2013-06-21 22:20:57')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started POST "/things" for 127.0.0.1 at 2013-06-22 00:20:57 +0200
+Processing by ThingsController#create as HTML
+  Parameters: {"id"=>"4", "name"=>"Alex", "description"=>"Intg test"}
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mThing Exists (0.5ms)[0m  SELECT 1 AS one FROM "things" WHERE "things"."name" IS NULL LIMIT 1
+  [1m[36m (0.6ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendered things/_form.html.haml (36.8ms)
+  Rendered things/edit.html.haml (41.0ms)
+Completed 500 Internal Server Error in 63ms
+
+ActionView::Template::Error (undefined method `simple_form_for' for #<#<Class:0x007fe9d34032c8>:0x007fe9d3402508>):
+    1: = simple_form_for @thing do |f|
+    2:   = render 'shared/error_msg', model: @thing
+    3:   = f.input :name
+    4:   = f.button :submit
+  app/views/things/_form.html.haml:1:in `_app_views_things__form_html_haml__2671978790038821832_70321108718140'
+  app/views/things/edit.html.haml:3:in `_app_views_things_edit_html_haml___493286879628187632_70321105964860'
+  app/controllers/things_controller.rb:19:in `create'
+  test/integration/things_integration_test.rb:10:in `block in <class:ThingFlowsTest>'
+
+
+  [1m[35m (0.2ms)[0m  ROLLBACK
+Connecting to database specified by database.yml
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "things"[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (1, 'Guillaume', 'Awesome Full Stack Engineer', '2013-06-21 22:21:15', '2013-06-21 22:21:15')
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (2, 'Simon', 'XP/TDD Pragmatic Profesional', '2013-06-21 22:21:15', '2013-06-21 22:21:15')[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started POST "/things" for 127.0.0.1 at 2013-06-22 00:21:15 +0200
+Processing by ThingsController#create as HTML
+  Parameters: {"id"=>"4", "name"=>"Alex", "description"=>"Intg test"}
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mThing Exists (0.4ms)[0m  SELECT 1 AS one FROM "things" WHERE "things"."name" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendered things/_form.html.haml (34.6ms)
+  Rendered things/edit.html.haml (38.5ms)
+Completed 500 Internal Server Error in 60ms
+
+ActionView::Template::Error (undefined method `simple_form_for' for #<#<Class:0x007fa202df2298>:0x007fa202df0b78>):
+    1: = simple_form_for @thing do |f|
+    2:   = render 'shared/error_msg', model: @thing
+    3:   = f.input :name
+    4:   = f.button :submit
+  app/views/things/_form.html.haml:1:in `_app_views_things__form_html_haml___760011308855968666_70166905230440'
+  app/views/things/edit.html.haml:3:in `_app_views_things_edit_html_haml___2099477356623650470_70166905098600'
+  app/controllers/things_controller.rb:19:in `create'
+  test/integration/things_integration_test.rb:10:in `block in <class:ThingFlowsTest>'
+
+
+  [1m[35m (0.3ms)[0m  ROLLBACK
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "things"[0m
+  [1m[35mFixture Insert (0.5ms)[0m  INSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (1, 'Guillaume', 'Awesome Full Stack Engineer', '2013-06-21 22:22:39', '2013-06-21 22:22:39')
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (2, 'Simon', 'XP/TDD Pragmatic Profesional', '2013-06-21 22:22:39', '2013-06-21 22:22:39')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started POST "/things" for 127.0.0.1 at 2013-06-22 00:22:40 +0200
+Processing by ThingsController#create as HTML
+  Parameters: {"id"=>"4", "name"=>"Alex", "description"=>"Intg test"}
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mThing Exists (0.6ms)[0m  SELECT 1 AS one FROM "things" WHERE "things"."name" IS NULL LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendered shared/_error_msg.html.haml (1.9ms)
+  Rendered things/_form.html.haml (45.6ms)
+  Rendered things/edit.html.haml (49.2ms)
+Completed 200 OK in 69ms (Views: 53.3ms | ActiveRecord: 0.9ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+Connecting to database specified by database.yml
+  [1m[36m (0.7ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "things"[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (1, 'Guillaume', 'Awesome Full Stack Engineer', '2013-06-21 22:22:55', '2013-06-21 22:22:55')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (2, 'Simon', 'XP/TDD Pragmatic Profesional', '2013-06-21 22:22:55', '2013-06-21 22:22:55')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started POST "/things" for 127.0.0.1 at 2013-06-22 00:22:55 +0200
+Processing by ThingsController#create as HTML
+  Parameters: {"id"=>"4", "name"=>"Alex", "description"=>"Intg test"}
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mThing Exists (0.5ms)[0m  SELECT 1 AS one FROM "things" WHERE "things"."name" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendered shared/_error_msg.html.haml (2.0ms)
+  Rendered things/_form.html.haml (44.4ms)
+  Rendered things/edit.html.haml (48.2ms)
+Completed 200 OK in 69ms (Views: 52.7ms | ActiveRecord: 0.8ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "things"[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (1, 'Guillaume', 'Awesome Full Stack Engineer', '2013-06-21 22:23:21', '2013-06-21 22:23:21')
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (2, 'Simon', 'XP/TDD Pragmatic Profesional', '2013-06-21 22:23:21', '2013-06-21 22:23:21')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "things"[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (1, 'Guillaume', 'Awesome Full Stack Engineer', '2013-06-21 22:24:00', '2013-06-21 22:24:00')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (2, 'Simon', 'XP/TDD Pragmatic Profesional', '2013-06-21 22:24:00', '2013-06-21 22:24:00')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started POST "/things" for 127.0.0.1 at 2013-06-22 00:24:01 +0200
+Processing by ThingsController#create as HTML
+  Parameters: {"id"=>"4", "name"=>"Alex", "description"=>"Intg test"}
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mThing Exists (0.5ms)[0m  SELECT 1 AS one FROM "things" WHERE "things"."name" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendered shared/_error_msg.html.haml (2.0ms)
+  Rendered things/_form.html.haml (43.6ms)
+  Rendered things/edit.html.haml (47.2ms)
+Completed 200 OK in 68ms (Views: 51.5ms | ActiveRecord: 0.7ms)
+  [1m[35m (0.4ms)[0m  ROLLBACK
+Connecting to database specified by database.yml
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "things"[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (1, 'Guillaume', 'Awesome Full Stack Engineer', '2013-06-21 22:24:15', '2013-06-21 22:24:15')
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (2, 'Simon', 'XP/TDD Pragmatic Profesional', '2013-06-21 22:24:15', '2013-06-21 22:24:15')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started POST "/things" for 127.0.0.1 at 2013-06-22 00:24:15 +0200
+Processing by ThingsController#create as HTML
+  Parameters: {"id"=>"4", "name"=>"Alex", "description"=>"Intg test"}
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mThing Exists (0.4ms)[0m  SELECT 1 AS one FROM "things" WHERE "things"."name" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendered shared/_error_msg.html.haml (2.0ms)
+  Rendered things/_form.html.haml (47.7ms)
+  Rendered things/edit.html.haml (51.3ms)
+Completed 200 OK in 72ms (Views: 55.4ms | ActiveRecord: 0.8ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "things"[0m
+  [1m[35mFixture Insert (0.5ms)[0m  INSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (1, 'Guillaume', 'Awesome Full Stack Engineer', '2013-06-21 22:24:30', '2013-06-21 22:24:30')
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (2, 'Simon', 'XP/TDD Pragmatic Profesional', '2013-06-21 22:24:30', '2013-06-21 22:24:30')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started POST "/things" for 127.0.0.1 at 2013-06-22 00:24:30 +0200
+Processing by ThingsController#create as HTML
+  Parameters: {"id"=>"4", "name"=>"Alex", "description"=>"Intg test"}
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mThing Exists (0.6ms)[0m  SELECT 1 AS one FROM "things" WHERE "things"."name" IS NULL LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendered shared/_error_msg.html.haml (2.4ms)
+  Rendered things/_form.html.haml (44.4ms)
+  Rendered things/edit.html.haml (48.4ms)
+Completed 200 OK in 68ms (Views: 52.4ms | ActiveRecord: 1.1ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.4ms)[0m  [1mDELETE FROM "things"[0m
+  [1m[35mFixture Insert (0.5ms)[0m  INSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (1, 'Guillaume', 'Awesome Full Stack Engineer', '2013-06-21 22:25:24', '2013-06-21 22:25:24')
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (2, 'Simon', 'XP/TDD Pragmatic Profesional', '2013-06-21 22:25:24', '2013-06-21 22:25:24')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started POST "/things" for 127.0.0.1 at 2013-06-22 00:25:24 +0200
+Processing by ThingsController#create as HTML
+  Parameters: {"id"=>"4", "name"=>"Alex", "description"=>"Intg test"}
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mThing Exists (0.4ms)[0m  SELECT 1 AS one FROM "things" WHERE "things"."name" IS NULL LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendered shared/_error_msg.html.haml (2.1ms)
+  Rendered things/_form.html.haml (45.2ms)
+  Rendered things/edit.html.haml (49.2ms)
+Completed 200 OK in 70ms (Views: 54.2ms | ActiveRecord: 0.9ms)
+  [1m[35m (0.4ms)[0m  ROLLBACK
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.5ms)[0m  [1mDELETE FROM "things"[0m
+  [1m[35mFixture Insert (0.5ms)[0m  INSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (1, 'Guillaume', 'Awesome Full Stack Engineer', '2013-06-21 22:25:39', '2013-06-21 22:25:39')
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (2, 'Simon', 'XP/TDD Pragmatic Profesional', '2013-06-21 22:25:39', '2013-06-21 22:25:39')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "things"[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (1, 'Guillaume', 'Awesome Full Stack Engineer', '2013-06-21 22:26:37', '2013-06-21 22:26:37')
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (2, 'Simon', 'XP/TDD Pragmatic Profesional', '2013-06-21 22:26:37', '2013-06-21 22:26:37')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started POST "/things" for 127.0.0.1 at 2013-06-22 00:26:37 +0200
+Processing by ThingsController#create as HTML
+  Parameters: {"id"=>"4", "name"=>"Alex", "description"=>"Intg test"}
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mThing Exists (0.5ms)[0m  SELECT 1 AS one FROM "things" WHERE "things"."name" IS NULL LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendered shared/_error_msg.html.haml (2.2ms)
+  Rendered things/_form.html.haml (50.8ms)
+  Rendered things/edit.html.haml (56.3ms)
+Completed 200 OK in 77ms (Views: 60.5ms | ActiveRecord: 0.9ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "things"[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (1, 'Guillaume', 'Awesome Full Stack Engineer', '2013-06-21 22:26:58', '2013-06-21 22:26:58')
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (2, 'Simon', 'XP/TDD Pragmatic Profesional', '2013-06-21 22:26:58', '2013-06-21 22:26:58')[0m
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started POST "/things" for 127.0.0.1 at 2013-06-22 00:26:59 +0200
+Processing by ThingsController#create as HTML
+  Parameters: {"id"=>"4", "name"=>"Alex", "description"=>"Intg test"}
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mThing Exists (0.5ms)[0m  SELECT 1 AS one FROM "things" WHERE "things"."name" IS NULL LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendered shared/_error_msg.html.haml (1.8ms)
+  Rendered things/_form.html.haml (43.5ms)
+  Rendered things/edit.html.haml (47.3ms)
+Completed 200 OK in 68ms (Views: 51.9ms | ActiveRecord: 1.0ms)
+Started GET "/things/4" for 127.0.0.1 at 2013-06-22 00:26:59 +0200
+Processing by ThingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mThing Load (1.0ms)[0m  SELECT "things".* FROM "things" WHERE "things"."id" = $1 LIMIT 1  [["id", "4"]]
+Completed 404 Not Found in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find Thing with id=4):
+  app/controllers/things_controller.rb:7:in `show'
+  test/integration/things_integration_test.rb:12:in `block in <class:ThingFlowsTest>'
+
+
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "things"[0m
+  [1m[35mFixture Insert (0.5ms)[0m  INSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (1, 'Guillaume', 'Awesome Full Stack Engineer', '2013-06-21 22:27:10', '2013-06-21 22:27:10')
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (2, 'Simon', 'XP/TDD Pragmatic Profesional', '2013-06-21 22:27:10', '2013-06-21 22:27:10')[0m
+  [1m[35m (1.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started POST "/things" for 127.0.0.1 at 2013-06-22 00:27:10 +0200
+Processing by ThingsController#create as HTML
+  Parameters: {"id"=>"4", "name"=>"Alex", "description"=>"Intg test"}
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mThing Exists (0.5ms)[0m  SELECT 1 AS one FROM "things" WHERE "things"."name" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendered shared/_error_msg.html.haml (1.9ms)
+  Rendered things/_form.html.haml (43.8ms)
+  Rendered things/edit.html.haml (47.5ms)
+Completed 200 OK in 67ms (Views: 51.6ms | ActiveRecord: 0.8ms)
+Started GET "/things/4" for 127.0.0.1 at 2013-06-22 00:27:10 +0200
+Processing by ThingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mThing Load (1.0ms)[0m  SELECT "things".* FROM "things" WHERE "things"."id" = $1 LIMIT 1  [["id", "4"]]
+Completed 404 Not Found in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find Thing with id=4):
+  app/controllers/things_controller.rb:7:in `show'
+  test/integration/things_integration_test.rb:12:in `block in <class:ThingFlowsTest>'
+
+
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.9ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "things"[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (1, 'Guillaume', 'Awesome Full Stack Engineer', '2013-06-21 22:27:24', '2013-06-21 22:27:24')
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (2, 'Simon', 'XP/TDD Pragmatic Profesional', '2013-06-21 22:27:24', '2013-06-21 22:27:24')[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started POST "/things" for 127.0.0.1 at 2013-06-22 00:27:24 +0200
+Processing by ThingsController#create as HTML
+  Parameters: {"name"=>"Alex", "description"=>"Intg test"}
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mThing Exists (0.4ms)[0m  SELECT 1 AS one FROM "things" WHERE "things"."name" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendered shared/_error_msg.html.haml (2.0ms)
+  Rendered things/_form.html.haml (43.7ms)
+  Rendered things/edit.html.haml (47.5ms)
+Completed 200 OK in 67ms (Views: 51.8ms | ActiveRecord: 0.8ms)
+Started GET "/things/4" for 127.0.0.1 at 2013-06-22 00:27:24 +0200
+Processing by ThingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mThing Load (1.0ms)[0m  SELECT "things".* FROM "things" WHERE "things"."id" = $1 LIMIT 1  [["id", "4"]]
+Completed 404 Not Found in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find Thing with id=4):
+  app/controllers/things_controller.rb:7:in `show'
+  test/integration/things_integration_test.rb:11:in `block in <class:ThingFlowsTest>'
+
+
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "things"[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (1, 'Guillaume', 'Awesome Full Stack Engineer', '2013-06-21 22:27:38', '2013-06-21 22:27:38')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (2, 'Simon', 'XP/TDD Pragmatic Profesional', '2013-06-21 22:27:38', '2013-06-21 22:27:38')[0m
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started POST "/things" for 127.0.0.1 at 2013-06-22 00:27:38 +0200
+Processing by ThingsController#create as HTML
+  Parameters: {"id"=>"4", "name"=>"Alex", "description"=>"Intg test"}
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mThing Exists (0.5ms)[0m  SELECT 1 AS one FROM "things" WHERE "things"."name" IS NULL LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendered shared/_error_msg.html.haml (2.0ms)
+  Rendered things/_form.html.haml (51.0ms)
+  Rendered things/edit.html.haml (55.1ms)
+Completed 200 OK in 75ms (Views: 59.4ms | ActiveRecord: 1.0ms)
+Started GET "/things.4" for 127.0.0.1 at 2013-06-22 00:27:38 +0200
+Processing by ThingsController#index as 
+  [1m[35mThing Load (0.4ms)[0m  SELECT "things".* FROM "things" 
+  Rendered things/index.html.haml (3.1ms)
+Completed 200 OK in 8ms (Views: 6.0ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "things"[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (1, 'Guillaume', 'Awesome Full Stack Engineer', '2013-06-21 22:28:39', '2013-06-21 22:28:39')
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (2, 'Simon', 'XP/TDD Pragmatic Profesional', '2013-06-21 22:28:39', '2013-06-21 22:28:39')[0m
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started POST "/things" for 127.0.0.1 at 2013-06-22 00:28:39 +0200
+Processing by ThingsController#create as HTML
+  Parameters: {"id"=>"4", "name"=>"Alex", "description"=>"Intg test"}
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mThing Exists (0.4ms)[0m  SELECT 1 AS one FROM "things" WHERE "things"."name" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendered shared/_error_msg.html.haml (2.0ms)
+  Rendered things/_form.html.haml (52.3ms)
+  Rendered things/edit.html.haml (56.6ms)
+Completed 200 OK in 77ms (Views: 61.0ms | ActiveRecord: 0.8ms)
+WARNING: Can't mass-assign protected attributes: id
+  [1m[35m (0.2ms)[0m  ROLLBACK
+Connecting to database specified by database.yml
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "things"[0m
+  [1m[35mFixture Insert (0.5ms)[0m  INSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (1, 'Guillaume', 'Awesome Full Stack Engineer', '2013-06-21 22:29:11', '2013-06-21 22:29:11')
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (2, 'Simon', 'XP/TDD Pragmatic Profesional', '2013-06-21 22:29:11', '2013-06-21 22:29:11')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started POST "/things" for 127.0.0.1 at 2013-06-22 00:29:11 +0200
+Processing by ThingsController#create as HTML
+  Parameters: {"id"=>"4", "name"=>"Alex", "description"=>"Intg test"}
+  [1m[36m (0.4ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mThing Exists (0.4ms)[0m  SELECT 1 AS one FROM "things" WHERE "things"."name" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendered shared/_error_msg.html.haml (1.9ms)
+  Rendered things/_form.html.haml (43.8ms)
+  Rendered things/edit.html.haml (47.4ms)
+Completed 200 OK in 67ms (Views: 51.6ms | ActiveRecord: 0.9ms)
+WARNING: Can't mass-assign protected attributes: id
+  [1m[35m (0.2ms)[0m  ROLLBACK
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "things"[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (1, 'Guillaume', 'Awesome Full Stack Engineer', '2013-06-21 22:29:23', '2013-06-21 22:29:23')
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (2, 'Simon', 'XP/TDD Pragmatic Profesional', '2013-06-21 22:29:23', '2013-06-21 22:29:23')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started POST "/things" for 127.0.0.1 at 2013-06-22 00:29:23 +0200
+Processing by ThingsController#create as HTML
+  Parameters: {"id"=>"4", "name"=>"Alex", "description"=>"Intg test"}
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mThing Exists (0.5ms)[0m  SELECT 1 AS one FROM "things" WHERE "things"."name" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendered shared/_error_msg.html.haml (2.4ms)
+  Rendered things/_form.html.haml (44.7ms)
+  Rendered things/edit.html.haml (48.4ms)
+Completed 200 OK in 68ms (Views: 52.8ms | ActiveRecord: 0.9ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "things"[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (1, 'Guillaume', 'Awesome Full Stack Engineer', '2013-06-21 22:29:42', '2013-06-21 22:29:42')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (2, 'Simon', 'XP/TDD Pragmatic Profesional', '2013-06-21 22:29:42', '2013-06-21 22:29:42')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started POST "/things" for 127.0.0.1 at 2013-06-22 00:29:42 +0200
+Processing by ThingsController#create as HTML
+  Parameters: {"id"=>"4", "name"=>"Alex", "description"=>"Intg test"}
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mThing Exists (0.5ms)[0m  SELECT 1 AS one FROM "things" WHERE "things"."name" IS NULL LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendered shared/_error_msg.html.haml (2.1ms)
+  Rendered things/_form.html.haml (49.5ms)
+  Rendered things/edit.html.haml (53.0ms)
+Completed 200 OK in 74ms (Views: 57.1ms | ActiveRecord: 1.0ms)
+Started PUT "/things/4?name=A+new+name" for 127.0.0.1 at 2013-06-22 00:29:42 +0200
+Processing by ThingsController#update as HTML
+  Parameters: {"name"=>"A new name", "id"=>"4"}
+  [1m[35mThing Load (1.0ms)[0m  SELECT "things".* FROM "things" WHERE "things"."id" = $1 LIMIT 1  [["id", "4"]]
+Completed 404 Not Found in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find Thing with id=4):
+  app/controllers/things_controller.rb:24:in `update'
+  test/integration/things_integration_test.rb:15:in `block in <class:ThingFlowsTest>'
+
+
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "things"[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (1, 'Guillaume', 'Awesome Full Stack Engineer', '2013-06-21 22:30:00', '2013-06-21 22:30:00')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (2, 'Simon', 'XP/TDD Pragmatic Profesional', '2013-06-21 22:30:00', '2013-06-21 22:30:00')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started POST "/things" for 127.0.0.1 at 2013-06-22 00:30:00 +0200
+Processing by ThingsController#create as HTML
+  Parameters: {"id"=>"4", "name"=>"Alex", "description"=>"Intg test"}
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mThing Exists (0.4ms)[0m  SELECT 1 AS one FROM "things" WHERE "things"."name" IS NULL LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendered shared/_error_msg.html.haml (2.1ms)
+  Rendered things/_form.html.haml (44.6ms)
+  Rendered things/edit.html.haml (48.4ms)
+Completed 200 OK in 68ms (Views: 52.6ms | ActiveRecord: 1.0ms)
+Started PUT "/things/4?name=A+new+name" for 127.0.0.1 at 2013-06-22 00:30:00 +0200
+Processing by ThingsController#update as HTML
+  Parameters: {"name"=>"A new name", "id"=>"4"}
+  [1m[35mThing Load (1.1ms)[0m  SELECT "things".* FROM "things" WHERE "things"."id" = $1 LIMIT 1  [["id", "4"]]
+Completed 404 Not Found in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find Thing with id=4):
+  app/controllers/things_controller.rb:24:in `update'
+  test/integration/things_integration_test.rb:15:in `block in <class:ThingFlowsTest>'
+
+
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "things"[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (1, 'Guillaume', 'Awesome Full Stack Engineer', '2013-06-21 22:30:09', '2013-06-21 22:30:09')
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (2, 'Simon', 'XP/TDD Pragmatic Profesional', '2013-06-21 22:30:09', '2013-06-21 22:30:09')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started POST "/things" for 127.0.0.1 at 2013-06-22 00:30:10 +0200
+Processing by ThingsController#create as HTML
+  Parameters: {"id"=>"4", "name"=>"Alex", "description"=>"Intg test"}
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mThing Exists (0.5ms)[0m  SELECT 1 AS one FROM "things" WHERE "things"."name" IS NULL LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendered shared/_error_msg.html.haml (1.9ms)
+  Rendered things/_form.html.haml (43.5ms)
+  Rendered things/edit.html.haml (47.2ms)
+Completed 200 OK in 67ms (Views: 51.2ms | ActiveRecord: 0.8ms)
+Started PUT "/things/4?name=A+new+name" for 127.0.0.1 at 2013-06-22 00:30:10 +0200
+Processing by ThingsController#update as HTML
+  Parameters: {"name"=>"A new name", "id"=>"4"}
+  [1m[35mThing Load (0.8ms)[0m  SELECT "things".* FROM "things" WHERE "things"."id" = $1 LIMIT 1  [["id", "4"]]
+Completed 404 Not Found in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find Thing with id=4):
+  app/controllers/things_controller.rb:24:in `update'
+  test/integration/things_integration_test.rb:15:in `block in <class:ThingFlowsTest>'
+
+
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+  [1m[36m (2.9ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.7ms)[0m  [1mDELETE FROM "things"[0m
+  [1m[35mFixture Insert (2.8ms)[0m  INSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (1, 'Guillaume', 'Awesome Full Stack Engineer', '2013-06-21 22:34:19', '2013-06-21 22:34:19')
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (2, 'Simon', 'XP/TDD Pragmatic Profesional', '2013-06-21 22:34:19', '2013-06-21 22:34:19')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started POST "/things" for 127.0.0.1 at 2013-06-22 00:34:19 +0200
+Processing by ThingsController#create as HTML
+  Parameters: {"thing"=>{"id"=>"4", "name"=>"Alex", "description"=>"Intg test"}}
+WARNING: Can't mass-assign protected attributes: id
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mThing Exists (2.6ms)[0m  SELECT 1 AS one FROM "things" WHERE "things"."name" = 'Alex' LIMIT 1
+  [1m[36mSQL (1.9ms)[0m  [1mINSERT INTO "things" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Fri, 21 Jun 2013 22:34:19 UTC +00:00], ["description", "Intg test"], ["name", "Alex"], ["updated_at", Fri, 21 Jun 2013 22:34:19 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/things/3
+Completed 302 Found in 24ms (ActiveRecord: 5.1ms)
+Started GET "/things/3" for 127.0.0.1 at 2013-06-22 00:34:19 +0200
+Processing by ThingsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mThing Load (0.8ms)[0m  [1mSELECT "things".* FROM "things" WHERE "things"."id" = $1 LIMIT 1[0m  [["id", "3"]]
+  Rendered things/show.html.haml (2.7ms)
+Completed 200 OK in 11ms (Views: 9.1ms | ActiveRecord: 0.8ms)
+WARNING: Can't mass-assign protected attributes: id
+  [1m[35m (0.3ms)[0m  ROLLBACK
+Connecting to database specified by database.yml
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "things"[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (1, 'Guillaume', 'Awesome Full Stack Engineer', '2013-06-21 22:34:35', '2013-06-21 22:34:35')
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (2, 'Simon', 'XP/TDD Pragmatic Profesional', '2013-06-21 22:34:35', '2013-06-21 22:34:35')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started POST "/things" for 127.0.0.1 at 2013-06-22 00:34:35 +0200
+Processing by ThingsController#create as HTML
+  Parameters: {"thing"=>{"id"=>"4", "name"=>"Alex", "description"=>"Intg test"}}
+WARNING: Can't mass-assign protected attributes: id
+  [1m[36m (0.4ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mThing Exists (0.7ms)[0m  SELECT 1 AS one FROM "things" WHERE "things"."name" = 'Alex' LIMIT 1
+  [1m[36mSQL (1.6ms)[0m  [1mINSERT INTO "things" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Fri, 21 Jun 2013 22:34:35 UTC +00:00], ["description", "Intg test"], ["name", "Alex"], ["updated_at", Fri, 21 Jun 2013 22:34:35 UTC +00:00]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/things/3
+Completed 302 Found in 18ms (ActiveRecord: 3.2ms)
+Started GET "/things/3" for 127.0.0.1 at 2013-06-22 00:34:35 +0200
+Processing by ThingsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mThing Load (0.8ms)[0m  [1mSELECT "things".* FROM "things" WHERE "things"."id" = $1 LIMIT 1[0m  [["id", "3"]]
+  Rendered things/show.html.haml (2.4ms)
+Completed 200 OK in 9ms (Views: 6.7ms | ActiveRecord: 0.8ms)
+  [1m[35m (0.4ms)[0m  ROLLBACK
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "things"[0m
+  [1m[35mFixture Insert (0.5ms)[0m  INSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (1, 'Guillaume', 'Awesome Full Stack Engineer', '2013-06-21 22:35:01', '2013-06-21 22:35:01')
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (2, 'Simon', 'XP/TDD Pragmatic Profesional', '2013-06-21 22:35:01', '2013-06-21 22:35:01')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started POST "/things" for 127.0.0.1 at 2013-06-22 00:35:01 +0200
+Processing by ThingsController#create as HTML
+  Parameters: {"thing"=>{"name"=>"Alex", "description"=>"Intg test"}}
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mThing Exists (0.8ms)[0m  SELECT 1 AS one FROM "things" WHERE "things"."name" = 'Alex' LIMIT 1
+  [1m[36mSQL (1.7ms)[0m  [1mINSERT INTO "things" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Fri, 21 Jun 2013 22:35:01 UTC +00:00], ["description", "Intg test"], ["name", "Alex"], ["updated_at", Fri, 21 Jun 2013 22:35:01 UTC +00:00]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/things/3
+Completed 302 Found in 19ms (ActiveRecord: 3.2ms)
+Started GET "/things/3" for 127.0.0.1 at 2013-06-22 00:35:01 +0200
+Processing by ThingsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mThing Load (0.8ms)[0m  [1mSELECT "things".* FROM "things" WHERE "things"."id" = $1 LIMIT 1[0m  [["id", "3"]]
+  Rendered things/show.html.haml (2.9ms)
+Completed 200 OK in 10ms (Views: 7.4ms | ActiveRecord: 0.8ms)
+WARNING: Can't mass-assign protected attributes: id
+  [1m[35m (0.3ms)[0m  ROLLBACK
+Connecting to database specified by database.yml
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "things"[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (1, 'Guillaume', 'Awesome Full Stack Engineer', '2013-06-21 22:35:12', '2013-06-21 22:35:12')
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (2, 'Simon', 'XP/TDD Pragmatic Profesional', '2013-06-21 22:35:12', '2013-06-21 22:35:12')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started POST "/things" for 127.0.0.1 at 2013-06-22 00:35:12 +0200
+Processing by ThingsController#create as HTML
+  Parameters: {"thing"=>{"name"=>"Alex", "description"=>"Intg test"}}
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mThing Exists (0.7ms)[0m  SELECT 1 AS one FROM "things" WHERE "things"."name" = 'Alex' LIMIT 1
+  [1m[36mSQL (1.6ms)[0m  [1mINSERT INTO "things" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Fri, 21 Jun 2013 22:35:12 UTC +00:00], ["description", "Intg test"], ["name", "Alex"], ["updated_at", Fri, 21 Jun 2013 22:35:12 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/things/3
+Completed 302 Found in 18ms (ActiveRecord: 2.7ms)
+Started GET "/things/3" for 127.0.0.1 at 2013-06-22 00:35:12 +0200
+Processing by ThingsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mThing Load (0.8ms)[0m  [1mSELECT "things".* FROM "things" WHERE "things"."id" = $1 LIMIT 1[0m  [["id", "3"]]
+  Rendered things/show.html.haml (2.4ms)
+Completed 200 OK in 9ms (Views: 6.8ms | ActiveRecord: 0.8ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+Connecting to database specified by database.yml
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.4ms)[0m  [1mDELETE FROM "things"[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (1, 'Guillaume', 'Awesome Full Stack Engineer', '2013-06-21 22:35:23', '2013-06-21 22:35:23')
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (2, 'Simon', 'XP/TDD Pragmatic Profesional', '2013-06-21 22:35:23', '2013-06-21 22:35:23')[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started POST "/things" for 127.0.0.1 at 2013-06-22 00:35:23 +0200
+Processing by ThingsController#create as HTML
+  Parameters: {"thing"=>{"name"=>"Alex", "description"=>"Intg test"}}
+  [1m[36m (0.4ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mThing Exists (1.1ms)[0m  SELECT 1 AS one FROM "things" WHERE "things"."name" = 'Alex' LIMIT 1
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "things" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Fri, 21 Jun 2013 22:35:23 UTC +00:00], ["description", "Intg test"], ["name", "Alex"], ["updated_at", Fri, 21 Jun 2013 22:35:23 UTC +00:00]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/things/3
+Completed 302 Found in 21ms (ActiveRecord: 3.3ms)
+Started GET "/things/3" for 127.0.0.1 at 2013-06-22 00:35:23 +0200
+Processing by ThingsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mThing Load (0.9ms)[0m  [1mSELECT "things".* FROM "things" WHERE "things"."id" = $1 LIMIT 1[0m  [["id", "3"]]
+  Rendered things/show.html.haml (2.7ms)
+Completed 200 OK in 9ms (Views: 7.0ms | ActiveRecord: 0.9ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "things"[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (1, 'Guillaume', 'Awesome Full Stack Engineer', '2013-06-21 22:36:14', '2013-06-21 22:36:14')
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (2, 'Simon', 'XP/TDD Pragmatic Profesional', '2013-06-21 22:36:14', '2013-06-21 22:36:14')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started POST "/things" for 127.0.0.1 at 2013-06-22 00:36:14 +0200
+Processing by ThingsController#create as HTML
+  Parameters: {"thing"=>{"name"=>"Alex", "description"=>"Intg test"}}
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mThing Exists (0.8ms)[0m  SELECT 1 AS one FROM "things" WHERE "things"."name" = 'Alex' LIMIT 1
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "things" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Fri, 21 Jun 2013 22:36:14 UTC +00:00], ["description", "Intg test"], ["name", "Alex"], ["updated_at", Fri, 21 Jun 2013 22:36:14 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/things/3
+Completed 302 Found in 18ms (ActiveRecord: 2.5ms)
+Started GET "/things/3" for 127.0.0.1 at 2013-06-22 00:36:14 +0200
+Processing by ThingsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mThing Load (0.9ms)[0m  [1mSELECT "things".* FROM "things" WHERE "things"."id" = $1 LIMIT 1[0m  [["id", "3"]]
+  Rendered things/show.html.haml (2.7ms)
+Completed 200 OK in 9ms (Views: 7.0ms | ActiveRecord: 0.9ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+Connecting to database specified by database.yml
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "things"[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (1, 'Guillaume', 'Awesome Full Stack Engineer', '2013-06-21 22:36:27', '2013-06-21 22:36:27')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (2, 'Simon', 'XP/TDD Pragmatic Profesional', '2013-06-21 22:36:27', '2013-06-21 22:36:27')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started POST "/things" for 127.0.0.1 at 2013-06-22 00:36:27 +0200
+Processing by ThingsController#create as HTML
+  Parameters: {"thing"=>{"name"=>"Alex", "description"=>"Intg test"}}
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mThing Exists (0.8ms)[0m  SELECT 1 AS one FROM "things" WHERE "things"."name" = 'Alex' LIMIT 1
+  [1m[36mSQL (1.6ms)[0m  [1mINSERT INTO "things" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Fri, 21 Jun 2013 22:36:27 UTC +00:00], ["description", "Intg test"], ["name", "Alex"], ["updated_at", Fri, 21 Jun 2013 22:36:27 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/things/3
+Completed 302 Found in 18ms (ActiveRecord: 3.0ms)
+Started GET "/things/3" for 127.0.0.1 at 2013-06-22 00:36:27 +0200
+Processing by ThingsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mThing Load (0.8ms)[0m  [1mSELECT "things".* FROM "things" WHERE "things"."id" = $1 LIMIT 1[0m  [["id", "3"]]
+  Rendered things/show.html.haml (2.4ms)
+Completed 200 OK in 9ms (Views: 6.6ms | ActiveRecord: 0.8ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "things"[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (1, 'Guillaume', 'Awesome Full Stack Engineer', '2013-06-21 22:38:18', '2013-06-21 22:38:18')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (2, 'Simon', 'XP/TDD Pragmatic Profesional', '2013-06-21 22:38:18', '2013-06-21 22:38:18')[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started POST "/things" for 127.0.0.1 at 2013-06-22 00:38:19 +0200
+Processing by ThingsController#create as HTML
+  Parameters: {"thing"=>{"name"=>"Alex", "description"=>"Intg test"}}
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mThing Exists (0.7ms)[0m  SELECT 1 AS one FROM "things" WHERE "things"."name" = 'Alex' LIMIT 1
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "things" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Fri, 21 Jun 2013 22:38:19 UTC +00:00], ["description", "Intg test"], ["name", "Alex"], ["updated_at", Fri, 21 Jun 2013 22:38:19 UTC +00:00]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/things/3
+Completed 302 Found in 18ms (ActiveRecord: 2.8ms)
+Started GET "/things/3" for 127.0.0.1 at 2013-06-22 00:38:19 +0200
+Processing by ThingsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mThing Load (0.8ms)[0m  [1mSELECT "things".* FROM "things" WHERE "things"."id" = $1 LIMIT 1[0m  [["id", "3"]]
+  Rendered things/show.html.haml (2.4ms)
+Completed 200 OK in 10ms (Views: 7.0ms | ActiveRecord: 0.8ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "things"[0m
+  [1m[35mFixture Insert (0.5ms)[0m  INSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (1, 'Guillaume', 'Awesome Full Stack Engineer', '2013-06-21 22:39:04', '2013-06-21 22:39:04')
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (2, 'Simon', 'XP/TDD Pragmatic Profesional', '2013-06-21 22:39:04', '2013-06-21 22:39:04')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started POST "/things" for 127.0.0.1 at 2013-06-22 00:39:04 +0200
+Processing by ThingsController#create as HTML
+  Parameters: {"thing"=>{"name"=>"Alex", "description"=>"Intg test"}}
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mThing Exists (0.8ms)[0m  SELECT 1 AS one FROM "things" WHERE "things"."name" = 'Alex' LIMIT 1
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO "things" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Fri, 21 Jun 2013 22:39:04 UTC +00:00], ["description", "Intg test"], ["name", "Alex"], ["updated_at", Fri, 21 Jun 2013 22:39:04 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/things/3
+Completed 302 Found in 18ms (ActiveRecord: 2.6ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "things"[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (1, 'Guillaume', 'Awesome Full Stack Engineer', '2013-06-21 22:39:52', '2013-06-21 22:39:52')
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (2, 'Simon', 'XP/TDD Pragmatic Profesional', '2013-06-21 22:39:52', '2013-06-21 22:39:52')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started POST "/things" for 127.0.0.1 at 2013-06-22 00:39:53 +0200
+Processing by ThingsController#create as HTML
+  Parameters: {"thing"=>{"name"=>"Alex", "description"=>"Intg test"}}
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mThing Exists (0.7ms)[0m  SELECT 1 AS one FROM "things" WHERE "things"."name" = 'Alex' LIMIT 1
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO "things" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Fri, 21 Jun 2013 22:39:53 UTC +00:00], ["description", "Intg test"], ["name", "Alex"], ["updated_at", Fri, 21 Jun 2013 22:39:53 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/things/3
+Completed 302 Found in 19ms (ActiveRecord: 2.7ms)
+Started GET "/things/3" for 127.0.0.1 at 2013-06-22 00:39:53 +0200
+Processing by ThingsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mThing Load (0.8ms)[0m  [1mSELECT "things".* FROM "things" WHERE "things"."id" = $1 LIMIT 1[0m  [["id", "3"]]
+  Rendered things/show.html.haml (2.5ms)
+Completed 200 OK in 9ms (Views: 6.9ms | ActiveRecord: 0.8ms)
+Started PUT "/things/4?name=A+new+name" for 127.0.0.1 at 2013-06-22 00:39:53 +0200
+Processing by ThingsController#update as HTML
+  Parameters: {"name"=>"A new name", "id"=>"4"}
+  [1m[35mThing Load (0.4ms)[0m  SELECT "things".* FROM "things" WHERE "things"."id" = $1 LIMIT 1  [["id", "4"]]
+Completed 404 Not Found in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find Thing with id=4):
+  app/controllers/things_controller.rb:24:in `update'
+  test/integration/things_integration_test.rb:14:in `block in <class:ThingFlowsTest>'
+
+
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "things"[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (1, 'Guillaume', 'Awesome Full Stack Engineer', '2013-06-21 22:40:14', '2013-06-21 22:40:14')
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (2, 'Simon', 'XP/TDD Pragmatic Profesional', '2013-06-21 22:40:14', '2013-06-21 22:40:14')[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started POST "/things" for 127.0.0.1 at 2013-06-22 00:40:15 +0200
+Processing by ThingsController#create as HTML
+  Parameters: {"thing"=>{"name"=>"Alex", "description"=>"Intg test"}}
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mThing Exists (0.8ms)[0m  SELECT 1 AS one FROM "things" WHERE "things"."name" = 'Alex' LIMIT 1
+  [1m[36mSQL (1.7ms)[0m  [1mINSERT INTO "things" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Fri, 21 Jun 2013 22:40:15 UTC +00:00], ["description", "Intg test"], ["name", "Alex"], ["updated_at", Fri, 21 Jun 2013 22:40:15 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/things/3
+Completed 302 Found in 19ms (ActiveRecord: 3.0ms)
+Started GET "/things/3" for 127.0.0.1 at 2013-06-22 00:40:15 +0200
+Processing by ThingsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mThing Load (0.9ms)[0m  [1mSELECT "things".* FROM "things" WHERE "things"."id" = $1 LIMIT 1[0m  [["id", "3"]]
+  Rendered things/show.html.haml (2.4ms)
+Completed 200 OK in 9ms (Views: 6.6ms | ActiveRecord: 0.9ms)
+Started PUT "/things/3?name=A+new+name" for 127.0.0.1 at 2013-06-22 00:40:15 +0200
+Processing by ThingsController#update as HTML
+  Parameters: {"name"=>"A new name", "id"=>"3"}
+  [1m[35mThing Load (0.5ms)[0m  SELECT "things".* FROM "things" WHERE "things"."id" = $1 LIMIT 1  [["id", "3"]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mThing Exists (0.4ms)[0m  SELECT 1 AS one FROM "things" WHERE ("things"."name" = 'Alex' AND "things"."id" != 3) LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/things/3
+Completed 302 Found in 6ms (ActiveRecord: 1.2ms)
+Started GET "/things/3" for 127.0.0.1 at 2013-06-22 00:40:15 +0200
+Processing by ThingsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mThing Load (0.3ms)[0m  SELECT "things".* FROM "things" WHERE "things"."id" = $1 LIMIT 1  [["id", "3"]]
+  Rendered things/show.html.haml (0.6ms)
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "things" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "things"[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (1, 'Guillaume', 'Awesome Full Stack Engineer', '2013-06-21 22:41:04', '2013-06-21 22:41:04')
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "things" ("id", "name", "description", "created_at", "updated_at") VALUES (2, 'Simon', 'XP/TDD Pragmatic Profesional', '2013-06-21 22:41:04', '2013-06-21 22:41:04')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "things" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started POST "/things" for 127.0.0.1 at 2013-06-22 00:41:04 +0200
+Processing by ThingsController#create as HTML
+  Parameters: {"thing"=>{"name"=>"Alex", "description"=>"Intg test"}}
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mThing Exists (0.9ms)[0m  SELECT 1 AS one FROM "things" WHERE "things"."name" = 'Alex' LIMIT 1
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "things" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Fri, 21 Jun 2013 22:41:04 UTC +00:00], ["description", "Intg test"], ["name", "Alex"], ["updated_at", Fri, 21 Jun 2013 22:41:04 UTC +00:00]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/things/3
+Completed 302 Found in 18ms (ActiveRecord: 3.0ms)
+Started GET "/things/3" for 127.0.0.1 at 2013-06-22 00:41:04 +0200
+Processing by ThingsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mThing Load (0.6ms)[0m  [1mSELECT "things".* FROM "things" WHERE "things"."id" = $1 LIMIT 1[0m  [["id", "3"]]
+  Rendered things/show.html.haml (2.3ms)
+Completed 200 OK in 9ms (Views: 7.0ms | ActiveRecord: 0.6ms)
+Started PUT "/things/3?name=A+new+name" for 127.0.0.1 at 2013-06-22 00:41:04 +0200
+Processing by ThingsController#update as HTML
+  Parameters: {"name"=>"A new name", "id"=>"3"}
+  [1m[35mThing Load (0.3ms)[0m  SELECT "things".* FROM "things" WHERE "things"."id" = $1 LIMIT 1  [["id", "3"]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mThing Exists (0.4ms)[0m  SELECT 1 AS one FROM "things" WHERE ("things"."name" = 'Alex' AND "things"."id" != 3) LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/things/3
+Completed 302 Found in 5ms (ActiveRecord: 1.0ms)
+Started GET "/things/3" for 127.0.0.1 at 2013-06-22 00:41:04 +0200
+Processing by ThingsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mThing Load (0.4ms)[0m  SELECT "things".* FROM "things" WHERE "things"."id" = $1 LIMIT 1  [["id", "3"]]
+  Rendered things/show.html.haml (0.6ms)
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.4ms)
+Started DELETE "/things/3" for 127.0.0.1 at 2013-06-22 00:41:04 +0200
+Processing by ThingsController#destroy as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mThing Load (0.5ms)[0m  [1mSELECT "things".* FROM "things" WHERE "things"."id" = $1 LIMIT 1[0m  [["id", "3"]]
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "things" WHERE "things"."id" = $1[0m  [["id", 3]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/things
+Completed 302 Found in 3ms (ActiveRecord: 1.2ms)
+Started GET "/things/3" for 127.0.0.1 at 2013-06-22 00:41:04 +0200
+Processing by ThingsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mThing Load (0.4ms)[0m  [1mSELECT "things".* FROM "things" WHERE "things"."id" = $1 LIMIT 1[0m  [["id", "3"]]
+Completed 404 Not Found in 1ms
+
+ActiveRecord::RecordNotFound (Couldn't find Thing with id=3):
+  app/controllers/things_controller.rb:7:in `show'
+  test/integration/things_integration_test.rb:15:in `block in <class:ThingFlowsTest>'
+
+
+  [1m[35m (0.2ms)[0m  ROLLBACK

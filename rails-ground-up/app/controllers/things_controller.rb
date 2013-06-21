@@ -1,4 +1,4 @@
-class ThingController < ActionController::Base
+class ThingsController < ActionController::Base
 	def index
 		@things = Thing.all
 	end
@@ -16,7 +16,7 @@ class ThingController < ActionController::Base
 		if @thing.save
 			redirect_to @thing, notice: "Thing was successfuly created"
 		else
-			render :action "edit"
+			render action: "edit"
 		end
 	end
 
@@ -25,7 +25,7 @@ class ThingController < ActionController::Base
 		if @thing.update_attributes(params[:thing])
 			redirect_to @thing, notice: "Thing was successfuly updated"
 		else 
-			render :action "edit"
+			render action: "edit"
 		end
 	end
 
