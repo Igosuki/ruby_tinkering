@@ -1,0 +1,1 @@
+RailsGroundUp::Application.config.secret_token = "68757bf19dbcbfb1bfff26624c86a4cf4bd71634592a676c628b692ff2c1f84b"
