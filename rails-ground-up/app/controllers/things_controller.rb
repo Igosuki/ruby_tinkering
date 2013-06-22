@@ -7,6 +7,10 @@ class ThingsController < ActionController::Base
 		@thing = Thing.find(params[:id])
 	end
 
+	def edit
+		@thing = Thing.find(params[:id])
+	end
+
 	def new
 		@thing = Thing.new
 	end

@@ -1,0 +1,761 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"script",
+				"SCRIPT	Tag"
+			],
+			[
+				"do",
+				"do"
+			],
+			[
+				"file",
+				"fileName"
+			],
+			[
+				"expan",
+				"expanded_path"
+			],
+			[
+				"req",
+				"req_path"
+			],
+			[
+				"hobby",
+				"hobby1"
+			],
+			[
+				"list-",
+				"list-style-type"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "hello-app/public/404.html",
+			"settings":
+			{
+				"buffer_size": 729,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 67.0,
+		"selected_items":
+		[
+			[
+				"save as",
+				"Project: Save As"
+			],
+			[
+				"installp",
+				"Package Control: Install Package"
+			],
+			[
+				"fetch",
+				"Fetch: File"
+			],
+			[
+				"install pac",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"snippet gem",
+				"Snippet: require_gem \"..\""
+			],
+			[
+				"ruby",
+				"Set Syntax: Ruby"
+			],
+			[
+				"syntax: haml",
+				"Set Syntax: Ruby Haml"
+			],
+			[
+				"instap",
+				"Package Control: Install Package"
+			],
+			[
+				"reposit",
+				"Package Control: Add Repository"
+			],
+			[
+				"sidebar",
+				"View: Toggle Side Bar"
+			],
+			[
+				"packag",
+				"Package Control: List Packages"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: instal",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: add",
+				"Package Control: Add Repository"
+			],
+			[
+				"comment",
+				"Toggle Comment"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ns",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: add re",
+				"Package Control: Add Repository"
+			]
+		],
+		"width": 575.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/geps/Dev/training/ruby/ga-exercices/rails-ground-up/app/added.js",
+		"/Users/geps/Dev/training/ruby/ga-exercices/rails-ground-up/app/assets/stylesheets/application.css.scss",
+		"/Users/geps/Dev/training/ruby/ga-exercices/hello-app/public/404.html",
+		"/Users/geps/Dev/training/ruby/ga-exercices/hello-app/public/assets/application.js",
+		"/Users/geps/Dev/training/ruby/ga-exercices/rails-ground-up/spec/controllers/things_controller_spec.rb",
+		"/Users/geps/Dev/training/ruby/ga-exercices/rails-ground-up/Gemfile",
+		"/Users/geps/Dev/training/ruby/ga-exercices/rails-ground-up/app/views/layouts/application.html.haml",
+		"/Users/geps/Dev/training/ruby/ga-exercices/rails-ground-up/spec/spec_helper.rb",
+		"/Users/geps/Dev/training/ruby/ga-exercices/rails-ground-up/lib/tasks/cf_logger.rake",
+		"/Users/geps/Dev/training/ruby/ga-exercices/rails-ground-up/app/controllers/things_controller.rb",
+		"/Users/geps/Dev/training/ruby/ga-exercices/hello-app/test/functional/things_controller_test.rb",
+		"/Users/geps/Dev/training/ruby/ga-exercices/rails-ground-up/.rspec",
+		"/Users/geps/Dev/training/ruby/ga-exercices/rails-ground-up/spec/controllers/things_controller_spec.Rb",
+		"/Users/geps/Dev/training/ruby/ga-exercices/rails-ground-up/spec/models/thing_spec.rb",
+		"/Users/geps/Dev/training/ruby/ga-exercices/rails-ground-up/support/config/database_cleaner.rb",
+		"/Users/geps/Dev/training/ruby/ga-exercices/rails-ground-up/spec/spec_helper.Rb",
+		"/Users/geps/Dev/training/ruby/ga-exercices/rails-ground-up/test/functional/things_controller_test.rb",
+		"/Users/geps/Dev/training/ruby/ga-exercices/hello-app/app/controllers/things_controller.rb",
+		"/Users/geps/Dev/training/ruby/ga-exercices/rails-ground-up/test/integration/things_integration_test.rb",
+		"/Users/geps/Dev/training/ruby/ga-exercices/rails-ground-up/test/integration/things_integration.rb",
+		"/Users/geps/Dev/training/ruby/ga-exercices/hello-app/config/environments/test.rb",
+		"/Users/geps/Dev/training/ruby/ga-exercices/rails-ground-up/config/environments/test.rb",
+		"/Users/geps/Dev/training/ruby/ga-exercices/rails-ground-up/app/views/things/index.html.haml",
+		"/Users/geps/Dev/training/ruby/ga-exercices/hello-app/test/test_helper.rb",
+		"/Users/geps/Dev/training/ruby/ga-exercices/hello-app/config/application.rb",
+		"/Users/geps/Dev/training/ruby/ga-exercices/rails-ground-up/test/unit/thing_test.rb",
+		"/Users/geps/Dev/training/ruby/ga-exercices/rails-ground-up/test/functional/thing_controller_test.rb",
+		"/Users/geps/Dev/training/ruby/ga-exercices/rails-ground-up/test/fixtures/things.yml",
+		"/Users/geps/Dev/training/ruby/ga-exercices/rails-ground-up/test/fixtures/thing.yml",
+		"/Users/geps/Dev/training/ruby/ga-exercices/rails-ground-up/app/views/things/show.html.haml",
+		"/Users/geps/Dev/training/ruby/ga-exercices/rails-ground-up/config/routes.rb",
+		"/Users/geps/Dev/training/ruby/ga-exercices/rails-ground-up/test_helper.rb",
+		"/Users/geps/Dev/training/ruby/ga-exercices/rails-ground-up/db/migrate/1_create_things.rb",
+		"/Users/geps/Dev/training/ruby/ga-exercices/hello-app/config/database.yml",
+		"/Users/geps/Dev/training/ruby/ga-exercices/rails-ground-up/Rakefile",
+		"/Users/geps/Dev/training/ruby/ga-exercices/rails-ground-up/config/application.rb",
+		"/Users/geps/Dev/training/ruby/ga-exercices/rails-ground-up/config/database.yml",
+		"/Users/geps/Dev/training/ruby/ga-exercices/rails-ground-up/app/model/Thing.rb",
+		"/Users/geps/Dev/training/ruby/ga-exercices/rails-ground-up/app/controllers/application_controller.rb",
+		"/Users/geps/Dev/training/ruby/ga-exercices/rails-ground-up/app/views/things/_form.html.haml",
+		"/Users/geps/Dev/training/ruby/ga-exercices/rails-ground-up/app/views/things/new.html.haml",
+		"/Users/geps/Dev/training/ruby/ga-exercices/rails-ground-up/app/views/things/edit.html.haml",
+		"/Users/geps/Dev/training/ruby/ga-exercices/rails-ground-up/app/views/shared/_error_msg.html.haml",
+		"/Users/geps/Dev/training/ruby/ga-exercices/README.md",
+		"/Users/geps/Dev/training/ruby/ga-exercices/rails-ground-up/config/database.yaml",
+		"/Users/geps/Dev/training/ruby/ga-exercices/rails-ground-up/app/assets/javascripts/application.js",
+		"/Users/geps/Dev/training/ruby/ga-exercices/rails-ground-up/app/assets/javascript/application.js",
+		"/Users/geps/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Users/geps/Library/Application Support/Sublime Text 2/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/geps/Library/Application Support/Sublime Text 2/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/geps/Dev/training/ruby/ga-exercices/rails-ground-up/config/routes.Rb",
+		"/Users/geps/Dev/training/ruby/ga-exercices/hello-app/lib/tasks/cf_logger.rake",
+		"/Users/geps/Dev/training/ruby/ga-exercices/hello-app/lib/tasks/hello_world.rake",
+		"/Users/geps/Dev/training/ruby/ga-exercices/basics/oop.rb",
+		"/Users/geps/Dev/training/ruby/ga-exercices/hello-app/Gemfile",
+		"/Users/geps/Dev/training/ruby/ga-exercices/hello-app/Rakefile",
+		"/Users/geps/Dev/training/ruby/ga-exercices/rails-ground-up/script/rails",
+		"/Users/geps/Dev/training/ruby/ga-exercices/rails-ground-up/script/cf_logger",
+		"/Users/geps/Dev/training/ruby/ga-exercices/hello-app/test/integration/index_test.rb",
+		"/Users/geps/Dev/training/ruby/ga-exercices/rails-ground-up/config/initializers/secret_token.rb",
+		"/Users/geps/Dev/training/ruby/ga-exercices/rails-ground-up/config/boot.rb",
+		"/Users/geps/Dev/training/ruby/ga-exercices/rails-ground-up/config.ru",
+		"/Users/geps/Dev/training/ruby/ga-exercices/rails-ground-up/config/environment.rb",
+		"/Users/geps/Dev/training/ruby/ga-exercices/rack_hello_server/server.rb",
+		"/Users/geps/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/geps/Dev/training/ruby/ga-exercices/hello-app/config/boot.rb",
+		"/Users/geps/Dev/training/ruby/ga-exercices/hello-app/app/assets/stylesheets/application.css",
+		"/Users/geps/Dev/training/ruby/ga-exercices/public/index.html",
+		"/Users/geps/Dev/training/ruby/ga-exercices/server.rb",
+		"/Users/geps/Dev/training/ruby/ga-exercices/rack_hello_server/server_spec.rb",
+		"/Users/geps/Dev/training/ruby/ga-exercices/rack_hello_server/run.rb",
+		"/Users/geps/Dev/training/ruby/ga-exercices/helloworld.rb",
+		"/Users/geps/Dev/training/ruby/ga-exercices/mixins.rb",
+		"/Users/geps/Dev/training/ruby/ga-exercices/basics.rb",
+		"/Users/geps/Dev/training/ruby/ga-exercices/public/has a space/index.html",
+		"/Users/geps/Dev/training/ruby/ga-exercices/public/images/post.html",
+		"/Users/geps/Dev/training/ruby/ga-exercices/test_rack_server.sh",
+		"/Users/geps/Dev/training/ruby/ga-exercices/public/level/post.html",
+		"/Users/geps/Dev/training/ruby/ga-exercices/oop.rb",
+		"/Users/geps/Dev/training/ruby/ga-exercices/monkey_patching.rb",
+		"/Users/geps/Dev/training/ruby/ga-exercices/exercise2.rb",
+		"/Users/geps/Dev/training/ruby/ga-exercices/exercice2.rb",
+		"/Users/geps/Dev/training/ruby/ga-ruby-on-rails-for-devs/.gitignore",
+		"/Users/geps/Dev/training/ruby/ga-ruby-on-rails-for-devs/images/engine-yard.png",
+		"/Users/geps/Dev/training/ruby/ga-ruby-on-rails-for-devs/CONTRIBUTORS.md",
+		"/Users/geps/Dev/src/cod_yo/app/index.html",
+		"/Users/geps/Dev/src/cod_yo/app/scripts/directives/font-icon.js",
+		"/Users/geps/Dev/src/cod_yo/node_modules/grunt-bower-requirejs/node_modules/bower/node_modules/hogan.js/web/index.html.mustache",
+		"/Users/geps/Dev/src/cod_yo/node_modules/grunt-contrib-compass/tasks/lib/compass.js",
+		"/Users/geps/Dev/src/musicall-website/dist/styles/59e0857f.main.css",
+		"/Users/geps/Dev/xke/May2013/v.bot/web/js/main.js",
+		"/Users/geps/Dev/xke/May2013/v.bot/web/js/app.js",
+		"/Users/geps/Dev/xke/May2013/v.bot/Server.groovy",
+		"/Users/geps/Dev/xke/May2013/v.bot/index.html",
+		"/Users/geps/Dev/xke/May2013/v.bot/web/index.html",
+		"/Users/geps/Dev/xke/May2013/v.bot/web/js/services.js",
+		"/Users/geps/Dev/xke/May2013/v.bot/web/js/controllers.js",
+		"/Users/geps/Dev/xke/May2013/index.html",
+		"/Users/geps/Dev/xke/May2013/scripts/angular/angular.min.js",
+		"/Users/geps/Dev/xke/May2013/scripts/vertxbus.js",
+		"/Users/geps/Dev/src/ellebomusic/Gruntfile.js",
+		"/Users/geps/Dev/src/ellebomusic/component.json",
+		"/Users/geps/Dev/src/ellebomusic/package.json",
+		"/Users/geps/Dev/src/ellebomusic/s3-deploy.sh",
+		"/Users/geps/Dev/src/ellebomusic/app/index.html",
+		"/Users/geps/Dev/src/ellebomusic/app/scripts/app.js",
+		"/Users/geps/Dev/src/ellebomusic/app/scripts/controllers/Carousel.js",
+		"/Users/geps/Dev/src/ellebomusic/app/scripts/controllers/main.js",
+		"/Users/geps/Dev/src/ellebomusic/app/scripts/controllers/Map.js",
+		"/Users/geps/Dev/src/ellebomusic/app/scripts/controllers/TypeAhead.js",
+		"/Users/geps/Dev/src/ellebomusic/app/views/main.html",
+		"/Users/geps/Dev/src/ellebomusic/dist/index.html",
+		"/Users/geps/Dev/src/ellebomusic/dist/scripts/417674d4.scripts.js",
+		"/Users/geps/Dev/src/ellebomusic/dist/views/main.html",
+		"/Users/geps/Dev/src/ellebomusic/musicall-website/.idea/.name",
+		"/Users/geps/Dev/src/ellebomusic/musicall-website/.idea/modules.xml",
+		"/Users/geps/Dev/src/ellebomusic/musicall-website/.idea/workspace.xml",
+		"/Users/geps/Dev/src/ellebomusic/node_modules/grunt-karma/node_modules/karma/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/build/Makefile",
+		"/Users/geps/Dev/src/ellebomusic/test/spec/controllers/Carousel.js",
+		"/Users/geps/Dev/src/ellebomusic/test/spec/controllers/main.js",
+		"/Users/geps/Dev/src/ellebomusic/test/spec/controllers/Map.js",
+		"/Users/geps/Dev/src/ellebomusic/test/spec/controllers/TypeAhead.js",
+		"/Users/geps/Dev/src/ellebomusic/app/scripts/vendor/bootstrap.js",
+		"/Users/geps/Dev/src/ellebomusic/server/app.js",
+		"/Users/geps/Dev/src/ellebomusic/node_modules/grunt-express/Gruntfile.js",
+		"/Users/geps/Dev/libon/libon-cucumber/features/application_identifiers/applications_accessibility.feature",
+		"/Users/geps/Dev/libon/libon-cucumber/features/application_identifiers/applications_application_rights.feature",
+		"/Users/geps/Dev/lib/android/SideNavigation-master/sample.net/Properties/AndroidManifest.xml"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"",
+			"*.js",
+			"*.html",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"gem",
+			"gemgem",
+			"gem",
+			"'\n",
+			"gem",
+			"2.7",
+			"'\n",
+			"rails.root",
+			"path",
+			")\n",
+			"erb",
+			"hml",
+			"haml",
+			"file_name",
+			"Things",
+			"new",
+			"sidebar",
+			"new_",
+			"CONFIG_PATH",
+			"retry",
+			"ENV",
+			"tasks",
+			"postgres",
+			"sqlite3",
+			"applicai",
+			"real_path",
+			"is_a",
+			"ctrl+à",
+			"create keyspace",
+			"CASSANDRA_KEYSPACE_NAME",
+			"CQLCassandraDaoTest",
+			"getCqlSession",
+			"QueryBUilder",
+			"angular",
+			"musicall",
+			"express",
+			"'open'",
+			"path",
+			"grunt-contrib-connect",
+			"38001",
+			"action_side_navigation",
+			"mode_left",
+			"image_desc",
+			"bg_striped",
+			"DarkActionBar",
+			"android.library.reference.1=../../lib/android/SideNavigation-master/library",
+			"DarkActionBar",
+			"RESOURCE_ID",
+			"EXTRA_RESOURCE_ID",
+			"list-style-type",
+			"icomoon",
+			"radmin-icons",
+			"&#xe008;",
+			"data-icon",
+			"sample pages",
+			"where",
+			"/api",
+			"2.17",
+			"updateServerStatuses",
+			"OAuth2WebServerFlow",
+			"AuthorizationCodeInstalledApp",
+			"client_secret",
+			"serviceAccountUser",
+			"serviceAccount",
+			"setServiceAccountId",
+			"SERVICE_ACCOUNT_EMAIL",
+			"setServiceAccountId",
+			"p12",
+			"LocalServ",
+			"Scopes",
+			"oauth",
+			"JsonFactory",
+			"Test",
+			"Mock",
+			"mock",
+			"Auteurs",
+			"auteurs",
+			"Les auteurs",
+			"/^I",
+			"/^he",
+			"he get result",
+			"he login with",
+			"he login with app",
+			"he login without",
+			"a user exists",
+			"create_account",
+			"User",
+			"Usere",
+			"Factories",
+			"identifier-list",
+			"create_account",
+			"upload_contacts",
+			"be_nil",
+			"give",
+			"jquery",
+			"define",
+			"canvas",
+			"integration-test",
+			"classloader",
+			"ClassRealm",
+			"descriptor",
+			"component",
+			"OperationView",
+			"Cassandra",
+			"required",
+			"discoveryUrl",
+			"urlify",
+			"map",
+			"submitOperation",
+			".submit",
+			"form.sandbox",
+			"submit",
+			"isReadOnly",
+			"commit",
+			"Try it out",
+			"fieldErrors",
+			"passwordField",
+			"passwor",
+			"getRequiredAttribute",
+			"getRequiredA",
+			"RegistrationCode",
+			"Registration",
+			"RegitrationCode",
+			"logout",
+			"submit",
+			"restrictedAction",
+			"publicAction",
+			"date"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"ellebomusic",
+			"<li>",
+			"../images/"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "hello-app/public/404.html",
+					"settings":
+					{
+						"buffer_size": 729,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								524,
+								524
+							]
+						],
+						"settings":
+						{
+							"is_xml": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 37.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"css",
+				"rails-ground-up/app/assets/stylesheets/application.css.scss"
+			],
+			[
+				"html",
+				"hello-app/public/404.html"
+			],
+			[
+				"js",
+				"hello-app/public/assets/application.js"
+			],
+			[
+				"haml",
+				"rails-ground-up/app/views/layouts/application.html.haml"
+			],
+			[
+				"gemfile",
+				"rails-ground-up/Gemfile"
+			],
+			[
+				"spec_help",
+				"rails-ground-up/spec/spec_helper.rb"
+			],
+			[
+				"thingscontr",
+				"rails-ground-up/app/controllers/things_controller.rb"
+			],
+			[
+				"spec_he",
+				"rails-ground-up/spec/spec_helper.rb"
+			],
+			[
+				"spec_helper",
+				"rails-ground-up/spec/spec_helper.rb"
+			],
+			[
+				"spechelper",
+				"rails-ground-up/spec/spec_helper.rb"
+			],
+			[
+				"thingscontroller",
+				"rails-ground-up/spec/controllers/things_controller_spec.rb"
+			],
+			[
+				"spec",
+				"rails-ground-up/spec/spec_helper.rb"
+			],
+			[
+				"gemf",
+				"rails-ground-up/Gemfile"
+			],
+			[
+				"thingscontrol",
+				"rails-ground-up/app/controllers/things_controller.rb"
+			],
+			[
+				"test.rb",
+				"rails-ground-up/config/environments/test.rb"
+			],
+			[
+				"appli",
+				"hello-app/config/application.rb"
+			],
+			[
+				"test_helper",
+				"hello-app/test/test_helper.rb"
+			],
+			[
+				"thingcontroller",
+				"rails-ground-up/app/controllers/things_controller.rb"
+			],
+			[
+				"things",
+				"hello-app/test/functional/things_controller_test.rb"
+			],
+			[
+				"cf_",
+				"rails-ground-up/lib/tasks/cf_logger.rake"
+			],
+			[
+				"routes",
+				"rails-ground-up/config/routes.rb"
+			],
+			[
+				"application",
+				"rails-ground-up/config/application.rb"
+			],
+			[
+				"database",
+				"rails-ground-up/config/database.yaml"
+			],
+			[
+				"application.html",
+				"rails-ground-up/app/views/layouts/application.html.haml"
+			],
+			[
+				"application.rb",
+				"rails-ground-up/config/application.rb"
+			],
+			[
+				"rakefile",
+				"rails-ground-up/Rakefile"
+			],
+			[
+				"hellowo",
+				"hello-app/lib/tasks/hello_world.rake"
+			],
+			[
+				"cf_logger",
+				"hello-app/lib/tasks/cf_logger.rake"
+			],
+			[
+				"cf_l",
+				"rails-ground-up/lib/tasks/cf_logger.rake"
+			],
+			[
+				"server.",
+				"rack_hello_server/server.rb"
+			],
+			[
+				"databs",
+				"hello-app/config/database.yml"
+			],
+			[
+				"index_test",
+				"hello-app/test/integration/index_test.rb"
+			],
+			[
+				"secret",
+				"rails-ground-up/config/initializers/secret_token.rb"
+			],
+			[
+				"boot",
+				"rails-ground-up/config/boot.rb"
+			],
+			[
+				"server_s",
+				"rack_hello_server/server_spec.rb"
+			],
+			[
+				"mix",
+				"mixins.rb"
+			],
+			[
+				"mixin",
+				"mixins.rb"
+			],
+			[
+				"index",
+				"public/has a space/index.html"
+			],
+			[
+				"ide",
+				"public/index.html"
+			],
+			[
+				"",
+				".gitignore"
+			],
+			[
+				"abstractcassandradaotest",
+				"src/test/java/info/archinnov/achilles/common/AbstractCassandraDaoTest.java"
+			],
+			[
+				"ind",
+				"app/index.html"
+			],
+			[
+				"index.html",
+				"app/index.html"
+			],
+			[
+				"font",
+				"app/scripts/directives/font-icon.js"
+			],
+			[
+				"snippets.",
+				"app/views/snippets.html"
+			],
+			[
+				"snippet",
+				"app/scripts/controllers/snippets.js"
+			],
+			[
+				"main.html",
+				"app/views/main.html"
+			],
+			[
+				"main.xml",
+				"library/res/layout/main.xml"
+			],
+			[
+				"sidebar",
+				"pages/sidebar_menu.html"
+			],
+			[
+				"index.",
+				"docs/index.html"
+			],
+			[
+				"infra",
+				"manuscript/infra_nosql.md"
+			],
+			[
+				"ser",
+				"server.js"
+			],
+			[
+				"swa",
+				"lib/swagger.js"
+			],
+			[
+				"tools",
+				"release/target/housecream/js/utils/leaflet-tools.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 354.0,
+	"status_bar_visible": true
+}
