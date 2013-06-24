@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="03a9a978-c462-4ccf-9cd1-4e309398b7be" name="Default" comment="" />
+    <list default="true" id="03a9a978-c462-4ccf-9cd1-4e309398b7be" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="todoapp.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/index.html" changelist="03a9a978-c462-4ccf-9cd1-4e309398b7be" time="1372100246963" ignored="false" />
+    <file path="/index.html" changelist="03a9a978-c462-4ccf-9cd1-4e309398b7be" time="1372100519157" ignored="false" />
     <file path="/todo.css" changelist="03a9a978-c462-4ccf-9cd1-4e309398b7be" time="1372099022754" ignored="false" />
     <file path="/todo.js" changelist="03a9a978-c462-4ccf-9cd1-4e309398b7be" time="1372099844373" ignored="false" />
     <file path="/a.dummy" changelist="03a9a978-c462-4ccf-9cd1-4e309398b7be" time="1372099621199" ignored="false" />
+    <file path="/Dummy.txt" changelist="03a9a978-c462-4ccf-9cd1-4e309398b7be" time="1372100447405" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +75,7 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="59" selection-start="425" selection-end="425" vertical-scroll-proportion="0.1509434">
+            <state line="13" column="18" selection-start="530" selection-end="530" vertical-scroll-proportion="0.24528302">
               <folding />
             </state>
           </provider>
@@ -93,6 +97,14 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
@@ -107,7 +119,7 @@
     <option name="width" value="959" />
     <option name="height" value="980" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -176,11 +188,15 @@
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="options.lastSelected" value="editing.templates" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="FullScreen" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
   </component>
   <component name="RecentsManager">
@@ -411,6 +427,10 @@
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/css/bootstrap.min.css">
       <provider selected="true" editor-type-id="text-editor">
@@ -441,7 +461,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="59" selection-start="425" selection-end="425" vertical-scroll-proportion="0.1509434">
+        <state line="13" column="18" selection-start="530" selection-end="530" vertical-scroll-proportion="0.24528302">
           <folding />
         </state>
       </provider>

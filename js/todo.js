@@ -1,3 +1,5 @@
+angular.module("Todo", ['ngResource']);
+
 function TodoCtrl($scope) {
 	$scope.getTotalTodos = function() {
         return $scope.todos.length;
