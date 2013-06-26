@@ -1,3 +1,12 @@
 .todo-true {
     text-decoration: line-through;
 }
+
+.modal-close {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	color: #c0392b;
+	margin-left: 5px;
+}
+
