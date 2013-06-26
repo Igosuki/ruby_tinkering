@@ -1,0 +1,28 @@
+<div class="row">
+<table class="table table-striped">
+	<tr>
+		<th></th>
+		<th>Cover</th>
+		<th>Track</th>
+		<th>Type</th>
+		<th>Artist</th>
+		<th>Collection</th>
+		<th>Collection Price</th>
+		<th>Track Price</th>
+		<th>Rating</th>
+	</tr>
+	<tr ng-repeat="record in records | filter:filterCriteria | orderBy:sortCriteria:orderCriteria">
+		<td><button ng-disabled="!record.previewUrl" class="btn btn-block btn-large" ng-click="play(record)">
+			<i class="icon-play icon-2x"></i>
+		</button></td>
+		<td><img ng-src="{{record.artworkUrl60}}"/></td>
+		<td>{{record.trackName}}</td>
+		<td>{{record.kind}}</td>
+		<td>{{record.artistName}}</td>
+		<td>{{record.collectionName}}</td>
+		<td>{{record.collectionPrice}} {{record.currency}}</td>
+		<td>{{record.trackPrice}} {{record.currency}}</td>
+		<td ng-init="cookie(record, $index)"><rating value="record.rating" max="10" readonly="false" ></rating></td>
+	</tr>
+</table>
+</div>

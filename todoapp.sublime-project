@@ -1,0 +1,9 @@
+{
+	"folders":
+	[
+		{
+			"path": "/Users/geps/Dev/training/angular/todoapp",
+			"exclude": ["components"]
+		}
+	]
+}
