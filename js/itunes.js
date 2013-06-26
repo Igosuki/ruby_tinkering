@@ -26,7 +26,9 @@ function ITunesCtrl($http, $resource, $cookieStore, $scope, $parse, $location) {
 		{label: "Artist", value: "artistName"}
 	];
 	$scope.sortCriteria = "artistName";
-	$scope.searchQuery = "Bob Dylan"
+	$scope.searchQuery = "Bob Dylan";
+    $scope.playing = false;
+
 	var iTunesService = $resource("https://itunes.apple.com/search",
 		{callback: 'JSON_CALLBACK'}, {get: {method: 'JSONP'}});
 	$scope.searchRecords = function() { 
@@ -47,19 +49,20 @@ function ITunesCtrl($http, $resource, $cookieStore, $scope, $parse, $location) {
 	};
 	$scope.play = function(record) {
 		console.log("Playing " + angular.toJson(record));
-		$scope.currentPlayingRecord = record;
 		$scope.playing = true;
+		$scope.currentPlayingRecord = record;
 	};
 	$scope.pause = function(scope) {
 		console.log("Pausing");
 		$scope.playing = false;
-	}
+	};
 }
 
 app.directive('videoLoader', function(){
     return {
     	scope: {
-    		src: '@'
+    		src: '@',
+    		playing: '@'
     	},
     	transclude: true,
     	controller: function($scope, $element, $attrs, $transclude) {
@@ -69,9 +72,18 @@ app.directive('videoLoader', function(){
 	            $element[0].play();
 	        }, true);
 	        $scope.$watch("playing", function(newValue, oldValue){
-	            if (!newValue) 
-	                $element[0].pause();
+	            if (!(newValue === 'true')) {
+                	$element[0].pause();
+                }
 	        }, true);
     	}
+	};
+});
+
+app.directive('bar', function() {
+	return {
+		restrict: 'A',
+		template: '<span> | </span><span ng-transclude></span>',
+		transclude: true
 	};
 });
