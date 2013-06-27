@@ -1,0 +1,18 @@
+<div class="container-fluid" ng-controller="iTunesCtrl">
+	<h1><i class="icon-apple" style="font-size: 1.5em; color: #95a5a6;"></i> Search Things on Itunes</h1>
+	<form class="form-search form-inline">
+		<span>Search</span>
+		<input type="text" class="input-medium search-query" ng-model="searchQuery"  placeholder="Search here...">
+		<span bar>For</span>
+		<select class="selectpicker input-small" ng-model="searchType" ng-options="type.value as type.label for type in searchTypes">
+		</select>
+		<a class="btn" ng-click="searchRecords()"><i class="icon-search"></i>Search</a>
+		<span bar>Sort </span>
+		<select ng-model="sortCriteria" class="selectpicker span2" ng-options="type.value as type.label for type in mediaTypes">
+		</select>	
+		<span bar>Order </span><input type="checkbox" ng-model="orderCriteria">
+		<span bar>Filter </span>
+		<input class="search-query input-small" type="text" ng-model="filterCriteria">
+	</form>
+	<ng-include src="'partials/itunes/results.html'"></ng-include>
+</div>
