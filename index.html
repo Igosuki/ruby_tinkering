@@ -31,7 +31,7 @@
 			<button class="modal-close" ng-click="playing = !playing" class="btn"><i class="icon-remove"></i></button>
 		</div>
 		<div class="text-center">
-			<video video-loader width="320" height="240"  autoplay controls playing="{{playing}}" src="{{currentPlayingRecord.previewUrl}}">
+			<video video-loader width="320" height="240" controls playing="{{playing}}" ng-src="{{currentPlayingRecord.previewUrl}}">
 				<source src="{{src}}" type="video/mp4"></source>
 			</video>
 		</div>
