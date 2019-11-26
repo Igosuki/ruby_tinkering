@@ -16,3 +16,5 @@
     + [LearnHaskell](https://github.com/bitemyapp/learnhaskell)
     + [Playground](https://github.com/Igosuki/training_learning/tree/haskell)
 
+- Rust
+   + [Rustlings](https://github.com/rust-lang/rustlings)
