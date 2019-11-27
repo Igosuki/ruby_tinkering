@@ -12,6 +12,12 @@ pub fn factorial(num: u64) -> u64 {
     // For the most fun don't use:
     // - recursion
     // Execute `rustlings hint iterators4` for hints.
+
+    //ez
+    if num <= 1 {
+        return 1;
+    }
+    (1..num).rev().fold(num, |r, next| r * next)
 }
 
 #[cfg(test)]
