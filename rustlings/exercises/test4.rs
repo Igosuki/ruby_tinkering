@@ -7,6 +7,15 @@
 
 // I AM NOT DONE
 
+#[macro_use]
+mod custom_macros {
+    macro_rules! my_macro {
+        ($var:expr) => {
+            format!("Hello {}", $var)
+        }
+    }
+}
+
 fn main() {
     if my_macro!("world!") != "Hello world!" {
         panic!("Oh no! Wrong output!");
